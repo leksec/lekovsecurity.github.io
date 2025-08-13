@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="-ms-overflow-style: none; scrollbar-width: none;">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB54M68BRK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KB54M68BRK');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lekov Security provides expert web application penetration testing to identify and remediate critical vulnerabilities. Protect your assets with our comprehensive, actionable security assessments.">
+        <meta name="google-site-verification" content="J3I7DvfYbsikEyJBH8tImi7D3e5R0a6CrtMJTjmJlKA" />
+
+        <title>Web Application Penetration Testing | Lekov Security</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+        <link rel="canonical" href="https://lekovsecurity.mk/web-application-penetration-testing">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lekovsecurity.mk/web-application-penetration-testing">
+        <meta property="og:title" content="Lekov Security - Web Application Penetration Testing">
+        <meta property="og:description" content="We identify critical security vulnerabilities in your web applications before attackers do. Our comprehensive testing protects your data and reputation.">
+        <meta property="og:image" content="https://lekovsecurity.mk/assets/images/og-image.png">
+        <meta property="og:site_name" content="Lekov Security">
+        <meta property="og:locale" content="en_US">
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+        <style type="text/tailwindcss">
+            @theme {
+                --color-cyber-dark: #050505;
+                --color-cyber-secondary: #111111;
+                --color-cyber-accent: #39FF14;
+                --color-cyber-light: #E0E0E0;
+
+                --font-sans: 'Inter', 'sans-serif';
+                --font-mono: 'JetBrains Mono', 'monospace';
+                --font-display: 'Orbitron', 'sans-serif';
+            }
+
+            @keyframes pan-grid {
+                0% { background-position: 0 0; }
+                100% { background-position: 2000px 2000px; }
+            }
+
+            @keyframes blink {
+                50% { opacity: 0; }
+            }
+
+            @layer base {
+                body::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: 
+                        linear-gradient(to right, rgba(57, 255, 20, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+                    background-size: 40px 40px;
+                    z-index: -1;
+                    animation: pan-grid 200s linear infinite;
+                }
+            }
+
+            @layer utilities {
+                .text-glow {
+                    text-shadow: 0 0 8px theme('colors.cyber.accent'), 0 0 20px theme('colors.cyber.accent');
+                }
+
+                .box-glow {
+                    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+                }
+
+                .reveal {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                }
+
+                .reveal.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Web Application Penetration Testing | Lekov Security",
+                "description": "Lekov Security provides expert web application penetration testing to identify and remediate critical vulnerabilities. Protect your assets with our comprehensive, actionable security assessments.",
+                "url": "https://lekovsecurity.mk/web-application-penetration-testing",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Lekov Security",
+                    "url": "https://lekovsecurity.mk/",
+                    "logo": "https://lekovsecurity.mk/assets/images/logo.png",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+389-74-221-337",
+                        "contactType": "customer service"
+                    },
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Kratovo",
+                        "addressCountry": "MK"
+                    }
+                },
+                "mainEntity": {
+                    "@type": "Service",
+                    "name": "Web Application Penetration Testing",
+                    "serviceType": "Cybersecurity Service",
+                    "description": "Our web application penetration testing is a proactive security assessment designed to identify and exploit vulnerabilities within your applications. We simulate real-world cyberattacks to uncover weaknesses in your code, configurations, and business logic before malicious actors can.",
+                    "provider": {
+                        "@id": "https://lekovsecurity.mk/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "North Macedonia"
+                    },
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "Penetration Testing Methodology",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Planning & Scoping"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Discovery & Reconnaissance"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Vulnerability Exploitation"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Comprehensive Reporting & Remediation Guidance"
+                                }
+                            }
+                        ]
+                    },
+                    "category": [
+                        "SQL Injection",
+                        "Cross-Site Scripting (XSS)",
+                        "Broken Authentication",
+                        "Broken Access Control",
+                        "Sensitive Data Exposure",
+                        "Security Misconfigurations"
+                    ]
+                }
+            }
+        </script>
+    </head>
+
+    <body class="bg-cyber-dark text-cyber-light font-sans antialiased">
+        <header id="header" class="bg-cyber-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-cyber-accent/20 transition-all duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/" class="flex items-center space-x-3">
+                        <img src="/assets/images/logo.svg" alt="Lekov Security - Cybersecurity and Software Solutions Logo" class="h-12 w-auto">
+                        <span class="text-xl sm:text-2xl font-display font-bold text-cyber-accent">Lekov Security<span class="text-white">.</span></span>
+                    </a>
+
+                    <div class="hidden md:flex items-center space-x-6">
+                        <nav class="flex items-center space-x-8">
+                            <a href="/" class="font-mono text-sm hover:text-cyber-accent transition-colors">/back</a>
+                        </nav>
+
+                        <div class="relative" id="lang-switcher-desktop">
+                            <button id="lang-btn-desktop" class="flex items-center font-mono text-sm hover:text-cyber-accent transition-colors">
+                                <span>/lang/en</span>
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+
+                            <div id="lang-menu-desktop" class="hidden absolute right-0 mt-2 py-2 w-24 bg-cyber-secondary border border-cyber-accent/30 box-glow">
+                                <a href="/services/web-application-penetration-testing" class="block px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/en</a>
+                                <a href="/mk/services/web-application-penetration-testing" class="block px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/mk</a>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="px-5 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                            [ /contact ]
+                        </a>
+                    </div>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-cyber-light focus:outline-none">
+                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden border-t border-cyber-accent/20">
+                <nav class="flex flex-col items-center space-y-5 py-5">
+                    <a href="/" class="font-mono hover:text-cyber-accent transition-colors">/back</a>
+
+                    <div class="relative" id="lang-switcher-mobile">
+                        <button id="lang-btn-mobile" class="flex items-center font-mono hover:text-cyber-accent transition-colors">
+                            <span>/lang/en</span>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+
+                        <div id="lang-menu-mobile" class="hidden absolute left-1/2 -translate-x-1/2 mt-2 py-2 w-24 bg-cyber-secondary border border-cyber-accent/30 box-glow z-10">
+                            <a href="/services/web-application-penetration-testing" class="block text-center px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/en</a>
+                            <a href="/mk/services/web-application-penetration-testing" class="block text-center px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/mk</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="mt-2 px-6 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                        [ /contact ]
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white mb-4 reveal">
+                        Web Application<br><span class="text-cyber-accent text-glow">Penetration Testing</span>
+                    </h1>
+                    <p class="font-mono text-cyber-accent mb-8 reveal" style="transition-delay: 100ms;">// Exposing Vulnerabilities Before They're Exploited</p>
+                    <p class="text-lg sm:text-xl text-cyber-light/80 max-w-3xl mx-auto mb-10 reveal" style="transition-delay: 200ms;">
+                        Web applications are the face of your organization and a primary target for cybercriminals. A single vulnerability can lead to unauthorized access, exposure of sensitive customer data, and significant downtime.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 reveal" style="transition-delay: 400ms;">
+                        <a href="#methodology" class="px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Our Methodology
+                        </a>
+
+                        <a href="#contact" class="px-8 py-3 bg-transparent text-cyber-accent font-mono font-bold border-2 border-cyber-accent hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Request an Assessment
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="reveal text-center lg:text-left">
+                            <h2 class="font-display text-4xl font-bold text-white mb-4">Protect Your Digital Frontier</h2>
+                            <p class="font-mono text-cyber-accent mb-6">// Why Proactive Testing is Non-Negotiable</p>
+                            <p class="text-cyber-light/80 leading-relaxed">
+                                Our web application penetration testing is a proactive security assessment designed to identify and exploit vulnerabilities within your applications. We simulate real-world cyberattacks to uncover weaknesses in your code, configurations, and business logic before malicious actors can cause data breaches, financial loss, or reputational damage.
+                            </p>
+                        </div>
+
+                        <div class="font-mono text-sm bg-cyber-dark p-6 border border-cyber-accent/30 reveal" style="transition-delay: 200ms;">
+                            <p><span class="text-cyber-accent">lekov@security:~$</span> ./check-risks</p>
+                            <p class="my-2 text-cyber-light">Scanning for common threat vectors...</p>
+                            <p><span class="text-cyber-accent">[!]</span> <span class="text-white">High Risk:</span> Potential for sensitive data exposure.</p>
+                            <p><span class="text-cyber-accent">[!]</span> <span class="text-white">High Risk:</span> Broken access controls detected.</p>
+                            <p><span class="text-cyber-accent">[!]</span> <span class="text-white">Medium Risk:</span> Session management misconfigurations.</p>
+                            <p class="mt-2 text-cyber-light">Analysis complete. Proactive testing is critical.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="methodology" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Our Methodical Approach to Security</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// A Process Forged from Industry Best Practices</p>
+                        <p class="text-cyber-light/80 max-w-3xl mx-auto mt-4">We follow a rigorous, multi-phased methodology aligned with industry standards like OWASP and PTES to ensure no stone is left unturned. Our process is transparent, thorough, and designed to deliver actionable results.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 01_PLANNING</h3>
+                            <p class="text-cyber-light/80">We collaborate with you to define the scope, objectives, and rules of engagement, ensuring our testing strategy aligns perfectly with your business context and security concerns.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 100ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 02_DISCOVERY</h3>
+                            <p class="text-cyber-light/80">Our testers use advanced reconnaissance techniques to gather intelligence and map your application's architecture, identifying potential attack vectors before the test begins.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 200ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 03_EXPLOITATION</h3>
+                            <p class="text-cyber-light/80">Using a combination of automated tools and manual expertise, we safely simulate attacks to exploit identified vulnerabilities, demonstrating their real-world impact without causing harm to your systems.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 300ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 04_REPORTING</h3>
+                            <p class="text-cyber-light/80">You receive a comprehensive report detailing our findings, risk levels, and clear, prioritized remediation guidance. We deliver both a high-level executive summary and an in-depth technical report.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="vulnerabilities" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Common Vulnerabilities We Uncover</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Targeting the OWASP Top 10 and Beyond</p>
+                        <p class="text-cyber-light/80 max-w-3xl mx-auto mt-4">Our testing goes deep to identify a wide range of security flaws. We are experts at finding and helping you fix the most critical and common issues that threaten modern web applications.</p>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-6 font-mono text-sm">
+                        <div class="reveal"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> SQL Injection & Other Injection Flaws</p></div>
+                        <div class="reveal" style="transition-delay: 50ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Broken Authentication & Session Management</p></div>
+                        <div class="reveal" style="transition-delay: 100ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Broken Access Control & User Enumeration</p></div>
+                        <div class="reveal" style="transition-delay: 150ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Sensitive Data Exposure</p></div>
+                        <div class="reveal" style="transition-delay: 200ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Cross-Site Scripting (XSS)</p></div>
+                        <div class="reveal" style="transition-delay: 250ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Security Misconfigurations</p></div>
+                        <div class="reveal" style="transition-delay: 300ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Insecure Business Logic Flaws</p></div>
+                        <div class="reveal" style="transition-delay: 350ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Vulnerable and Outdated Components</p></div>
+
+                        <div class="reveal md:col-span-2 text-center" style="transition-delay: 400ms;">
+                            <p class="text-cyber-accent/80 italic">// And many more custom-tailored exploit scenarios...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Request a Penetration Test</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Let's Discuss Your Application Security</p>
+                    </div>
+
+                    <div class="text-center mb-10 font-mono reveal">
+                        <p class="text-cyber-light mt-2">
+                            Call us at <a href="tel:+38974221337" class="text-cyber-accent hover:underline">+389 74 221 337</a>
+                        </p>
+                        <div class="my-4">or send us a message.</div>
+                    </div>
+
+                    <div class="max-w-2xl mx-auto reveal">
+                        <form action="https://submit-form.com/LFz4XaH40" method="POST" class="space-y-6">
+                            <input type="hidden" name="_redirect" value="https://lekovsecurity.mk/thanks.html">
+                            <input type="hidden" name="_email.subject" value="Penetration Testing">
+
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="flex-1">
+                                    <label for="name" class="font-mono text-sm text-cyber-accent block mb-2">// Your Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="email" class="font-mono text-sm text-cyber-accent block mb-2">// Your Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="font-mono text-sm text-cyber-accent block mb-2">// Tell us about your web application</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all resize-none" placeholder="Briefly describe your application, its technology stack (if known), and your primary security concerns..."></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 cursor-pointer">
+                                    Send Inquiry
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-cyber-accent/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-cyber-light/50">
+                <p class="font-mono text-sm">&copy; 2025 Lekov Security. All Rights Reserved.</p>
+                <p class="font-mono text-sm mt-1">Kratovo, North Macedonia</p>
+                <p class="font-mono text-xs mt-2">Your Partner in Cybersecurity and Secure Software Development.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuOpenIcon = document.getElementById('menu-open-icon');
+                const menuCloseIcon = document.getElementById('menu-close-icon');
+
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    menuOpenIcon.classList.toggle('hidden');
+                    menuCloseIcon.classList.toggle('hidden');
+                });
+
+                mobileMenu.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A') {
+                        mobileMenu.classList.add('hidden');
+                        menuOpenIcon.classList.remove('hidden');
+                        menuCloseIcon.classList.add('hidden');
+                    }
+                });
+
+                const langBtnDesktop = document.getElementById('lang-btn-desktop');
+                const langMenuDesktop = document.getElementById('lang-menu-desktop');
+                const langBtnMobile = document.getElementById('lang-btn-mobile');
+                const langMenuMobile = document.getElementById('lang-menu-mobile');
+
+                const setupLangSwitcher = (btn, menu) => {
+                    if (btn && menu) {
+                        btn.addEventListener('click', (event) => {
+                            event.stopPropagation();
+
+                            if (menu === langMenuDesktop && langMenuMobile)
+                                langMenuMobile.classList.add('hidden');
+
+                            if (menu === langMenuMobile && langMenuDesktop)
+                                langMenuDesktop.classList.add('hidden');
+
+                            menu.classList.toggle('hidden');
+                        });
+                    }
+                };
+
+                setupLangSwitcher(langBtnDesktop, langMenuDesktop);
+                setupLangSwitcher(langBtnMobile, langMenuMobile);
+
+                window.addEventListener('click', () => {
+                    if (langMenuDesktop && !langMenuDesktop.classList.contains('hidden'))
+                        langMenuDesktop.classList.add('hidden');
+
+                    if (langMenuMobile && !langMenuMobile.classList.contains('hidden'))
+                        langMenuMobile.classList.add('hidden');
+                });
+
+                const revealElements = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting)
+                            entry.target.classList.add('visible');
+                    });
+                }, {
+                    threshold: 0.1
+                });
+                revealElements.forEach(el => observer.observe(el));
+            });
+        </script>
+    </body>
+</html>

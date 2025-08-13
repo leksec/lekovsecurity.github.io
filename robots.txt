@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /thanks.html
+Disallow: /mk/thanks.html
+
+Sitemap: https://lekovsecurity.mk/sitemap.xml

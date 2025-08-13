@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="-ms-overflow-style: none; scrollbar-width: none;">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB54M68BRK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KB54M68BRK');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lekov Security offers web application penetration testing and custom software development. We provide simple, powerful solutions to protect your business.">
+        <meta name="google-site-verification" content="J3I7DvfYbsikEyJBH8tImi7D3e5R0a6CrtMJTjmJlKA" />
+
+        <title>Expert Cybersecurity Services | Lekov Security</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+        <link rel="canonical" href="https://lekovsecurity.mk/">
+        <link rel="alternate" hreflang="en" href="https://lekovsecurity.mk/">
+        <link rel="alternate" hreflang="mk" href="https://lekovsecurity.mk/mk/">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lekovsecurity.mk/">
+        <meta property="og:title" content="Lekov Security - Expert Cybersecurity Services">
+        <meta property="og:description" content="We simplify cybersecurity through penetration testing and software solutions. Our practical solutions protect your business assets, letting you focus on growth.">
+        <meta property="og:image" content="https://lekovsecurity.mk/assets/images/og-image.png">
+        <meta property="og:site_name" content="Lekov Security">
+        <meta property="og:locale" content="en_US">
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+        <style type="text/tailwindcss">
+            @theme {
+                --color-cyber-dark: #050505;
+                --color-cyber-secondary: #111111;
+                --color-cyber-accent: #39FF14;
+                --color-cyber-light: #E0E0E0;
+
+                --font-sans: 'Inter', 'sans-serif';
+                --font-mono: 'JetBrains Mono', 'monospace';
+                --font-display: 'Orbitron', 'sans-serif';
+            }
+
+            @keyframes pan-grid {
+                0% { background-position: 0 0; }
+                100% { background-position: 2000px 2000px; }
+            }
+
+            @keyframes blink {
+                50% { opacity: 0; }
+            }
+
+            @layer base {
+                body::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: 
+                        linear-gradient(to right, rgba(57, 255, 20, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+                    background-size: 40px 40px;
+                    z-index: -1;
+                    animation: pan-grid 200s linear infinite;
+                }
+            }
+
+            @layer utilities {
+                .text-glow {
+                    text-shadow: 0 0 8px theme('colors.cyber.accent'), 0 0 20px theme('colors.cyber.accent');
+                }
+
+                .box-glow {
+                    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+                }
+
+                .reveal {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                }
+
+                .reveal.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+                .typing-cursor::after {
+                    content: '_';
+                    animation: blink 1s step-end infinite;
+                }
+            }
+        </style>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "name": "Lekov Security",
+                        "url": "https://lekovsecurity.mk/",
+                        "logo": "https://lekovsecurity.mk/assets/images/logo.png",
+                        "description": "Lekov Security offers expert web application penetration testing and secure software development. We provide simple, powerful solutions to protect your business.",
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+389-74-221-337",
+                            "contactType": "Security Consultation",
+                            "areaServed": "MK",
+                            "availableLanguage": "en"
+                        },
+                        "sameAs": []
+                    },
+                    {
+                        "@type": "WebSite",
+                        "url": "https://lekovsecurity.mk/",
+                        "name": "Lekov Security",
+                        "description": "We simplify cybersecurity through penetration testing and software solutions. Our practical solutions protect your business assets, letting you focus on growth.",
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Lekov Security"
+                        }
+                    },
+                    {
+                        "@type": "Service",
+                        "serviceType": "Web Application Penetration Testing",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "Lekov Security"
+                        },
+                        "name": "Comprehensive Web Application Security Testing",
+                        "description": "Our experts identify vulnerabilities in your web applications and APIs. We provide clear, actionable reports, ensuring you understand the risks and how to mitigate them.",
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Cybersecurity Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Find & Explain Real-World Risks"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Clear, Actionable Reports"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Manual & Automated Testing"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "@type": "Service",
+                        "serviceType": "Custom Software Development",
+                        "provider": {
+                            "@type": "Organization",
+                            "name": "Lekov Security"
+                        },
+                        "name": "Secure Software Development",
+                        "description": "We build custom software tailored to your business processes. Our development lifecycle integrates security from the ground up, creating reliable and scalable solutions that are secure by design.",
+                        "hasOfferCatalog": {
+                            "@type": "OfferCatalog",
+                            "name": "Software Development Services",
+                            "itemListElement": [
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Security-First Development Process"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Efficient and Reliable Code"
+                                    }
+                                },
+                                {
+                                    "@type": "Offer",
+                                    "itemOffered": {
+                                        "@type": "Service",
+                                        "name": "Solutions That Grow With Your Business"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        </script>
+    </head>
+
+    <body class="bg-cyber-dark text-cyber-light font-sans antialiased">
+        <header id="header" class="bg-cyber-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-cyber-accent/20 transition-all duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/" class="flex items-center space-x-3">
+                        <img src="assets/images/logo.svg" alt="Lekov Security - Cybersecurity and Software Solutions Logo" class="h-12 w-auto">
+                        <span class="text-xl sm:text-2xl font-display font-bold text-cyber-accent">Lekov Security<span class="text-white">.</span></span>
+                    </a>
+
+                    <div class="hidden md:flex items-center space-x-6">
+                        <nav class="flex items-center space-x-8">
+                            <a href="#home" class="font-mono text-sm hover:text-cyber-accent transition-colors">/home</a>
+                            <a href="#about" class="font-mono text-sm hover:text-cyber-accent transition-colors">/about</a>
+                            <a href="#services" class="font-mono text-sm hover:text-cyber-accent transition-colors">/services</a>
+                        </nav>
+
+                        <div class="relative" id="lang-switcher-desktop">
+                            <button id="lang-btn-desktop" class="flex items-center font-mono text-sm hover:text-cyber-accent transition-colors">
+                                <span>/lang/en</span>
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+
+                            <div id="lang-menu-desktop" class="hidden absolute right-0 mt-2 py-2 w-24 bg-cyber-secondary border border-cyber-accent/30 box-glow">
+                                <a href="/" class="block px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/en</a>
+                                <a href="/mk/" class="block px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/mk</a>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="px-5 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                            [ /contact ]
+                        </a>
+                    </div>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-cyber-light focus:outline-none">
+                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden border-t border-cyber-accent/20">
+                <nav class="flex flex-col items-center space-y-5 py-5">
+                    <a href="#home" class="font-mono hover:text-cyber-accent transition-colors">/home</a>
+                    <a href="#about" class="font-mono hover:text-cyber-accent transition-colors">/about</a>
+                    <a href="#services" class="font-mono hover:text-cyber-accent transition-colors">/services</a>
+
+                    <div class="relative" id="lang-switcher-mobile">
+                        <button id="lang-btn-mobile" class="flex items-center font-mono hover:text-cyber-accent transition-colors">
+                            <span>/lang/en</span>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+
+                        <div id="lang-menu-mobile" class="hidden absolute left-1/2 -translate-x-1/2 mt-2 py-2 w-24 bg-cyber-secondary border border-cyber-accent/30 box-glow z-10">
+                            <a href="/" class="block text-center px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/en</a>
+                            <a href="/mk/" class="block text-center px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/mk</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="mt-2 px-6 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                        [ /contact ]
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-8">
+                <div class="max-w-4xl mx-auto">
+                    <img src="assets/images/logo.svg" alt="Lekov Security Logo" class="h-48 sm:h-64 w-auto mx-auto mb-8 reveal">
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white mb-6 min-h-[3rem] sm:min-h-[5rem]">
+                        <span id="typing-text" class="text-cyber-accent text-glow typing-cursor hidden">Innovate. Automate. Protect.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-cyber-light/80 max-w-2xl mx-auto mb-10 reveal" style="transition-delay: 200ms;">
+                        We simplify cybersecurity through penetration testing and software solutions. Our practical solutions protect your business assets, letting you focus on growth.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 reveal" style="transition-delay: 400ms;">
+                        <a href="#services" class="px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Explore Our Services
+                        </a>
+
+                        <a href="#contact" class="px-8 py-3 bg-transparent text-cyber-accent font-mono font-bold border-2 border-cyber-accent hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="reveal text-center lg:text-left">
+                            <h2 class="font-display text-4xl font-bold text-white mb-4">About Lekov Security</h2>
+                            <p class="font-mono text-cyber-accent mb-6">// Our Proactive & Simplified Cybersecurity Philosophy</p>
+                            <p class="text-cyber-light/80 leading-relaxed">
+                                We believe cybersecurity shouldn't be complicated or intimidating. Our passion is to make it simple and accessible for everyone. We focus on three core ideas: constant innovation to stay ahead of threats, smart automation to work efficiently, and an unwavering commitment to protecting what you've built.
+                            </p>
+                        </div>
+
+                        <div class="font-mono text-sm bg-cyber-dark p-6 border border-cyber-accent/30 reveal" style="transition-delay: 200ms;">
+                            <p><span class="text-cyber-accent">lekov@security:~$</span> ./run --philosophy</p>
+                            <p class="my-2 text-cyber-light">Initializing core principles...</p>
+                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Innovation:</span> Always seeking better solutions.</p>
+                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Automation:</span> Making security fast and efficient.</p>
+                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Protection:</span> Your security is our mission.</p>
+                            <p class="mt-2 text-cyber-light">Protocol execution complete. Ready to help.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Our Cybersecurity & Development Services</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Core Services for Digital Protection</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal flex flex-col h-full">
+                            <div class="flex-grow">
+                                <h3 class="font-display text-2xl font-bold text-cyber-accent mb-4">Comprehensive Web Application Security Testing</h3>
+                                <p class="text-cyber-light/80 mb-6">Our experts identify vulnerabilities in your web applications and APIs. We provide clear, actionable reports, ensuring you understand the risks and how to mitigate them.</p>
+                                <ul class="font-mono text-sm space-y-3">
+                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Clear, actionable reports</li>
+                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Manual & automated penetration testing</li>
+                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Prioritized fixes for what matters</li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-8">
+                                <a href="/services/web-application-penetration-testing" class="block w-full text-center py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                                    [ Learn More ]
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal flex flex-col h-full" style="transition-delay: 200ms;">
+                            <div class="flex-grow">
+                                <h3 class="font-display text-2xl font-bold text-cyber-accent mb-4">Secure Software Development</h3>
+                                <p class="text-cyber-light/80 mb-6">We build custom software tailored to your business processes. Our development lifecycle integrates security from the ground up, creating reliable and scalable solutions that are secure by design.	</p>
+                                <ul class="font-mono text-sm space-y-3">
+                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Security-first development process</li>
+                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Efficient and reliable code</li>
+                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Solutions that grow with your business</li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-8">
+                                <a href="/services/secure-custom-software-development" class="block w-full text-center py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                                    [ Learn More ]
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center reveal">
+                        <div class="bg-cyber-secondary/80 border border-dashed border-cyber-accent/50 p-8 max-w-2xl mx-auto">
+                            <h3 class="font-display text-2xl font-bold text-cyber-accent mb-4">Coming Soon: Cybersecurity Automation Framework</h3>
+                            <p class="text-cyber-light/80 mb-6">Effortless security is on the horizon. Soon, you'll be able to run security checks with a click—no fuss, no hassle. Our upcoming framework will automate complex security tests, providing rapid assessment of your systems with detailed reports.</p>
+                            <p class="font-mono text-sm text-cyber-accent">// Status: Finalizing Development</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Contact Us for a Security Consultation</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Let's Talk About Your Project</p>
+                    </div>
+
+                    <div class="text-center mb-10 font-mono reveal">
+                        <p class="text-cyber-light mt-2">
+                            Call us at <a href="tel:+38974221337" class="text-cyber-accent hover:underline">+389 74 221 337</a>
+                        </p>
+
+                        <div class="my-4">or send us a message.</div>
+                    </div>
+
+                    <div class="max-w-2xl mx-auto reveal">
+                        <form action="https://submit-form.com/LFz4XaH40" method="POST" class="space-y-6">
+                            <input type="hidden" name="_redirect" value="https://lekovsecurity.mk/thanks.html">
+
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="flex-1">
+                                    <label for="name" class="font-mono text-sm text-cyber-accent block mb-2">// Your Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="email" class="font-mono text-sm text-cyber-accent block mb-2">// Your Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <label for="subject" class="font-mono text-sm text-cyber-accent block mb-2">// Subject</label>
+                                <input type="text" id="subject" name="_email.subject" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                            </div>
+
+                            <div>
+                                <label for="message" class="font-mono text-sm text-cyber-accent block mb-2">// How can we help?</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all resize-none" placeholder="Tell us a bit about your project or question..."></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 cursor-pointer">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-cyber-accent/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-cyber-light/50">
+                <p class="font-mono text-sm">&copy; 2025 Lekov Security. All Rights Reserved.</p>
+                <p class="font-mono text-sm mt-1">Kratovo, North Macedonia</p>
+                <p class="font-mono text-xs mt-2">Your Partner in Cybersecurity and Secure Software Development.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuOpenIcon = document.getElementById('menu-open-icon');
+                const menuCloseIcon = document.getElementById('menu-close-icon');
+
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    menuOpenIcon.classList.toggle('hidden');
+                    menuCloseIcon.classList.toggle('hidden');
+                });
+
+                mobileMenu.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A') {
+                        mobileMenu.classList.add('hidden');
+                        menuOpenIcon.classList.remove('hidden');
+                        menuCloseIcon.classList.add('hidden');
+                    }
+                });
+
+                const langBtnDesktop = document.getElementById('lang-btn-desktop');
+                const langMenuDesktop = document.getElementById('lang-menu-desktop');
+                const langBtnMobile = document.getElementById('lang-btn-mobile');
+                const langMenuMobile = document.getElementById('lang-menu-mobile');
+
+                const setupLangSwitcher = (btn, menu) => {
+                    if (btn && menu) {
+                        btn.addEventListener('click', (event) => {
+                            event.stopPropagation();
+
+                            if (menu === langMenuDesktop && langMenuMobile)
+                                langMenuMobile.classList.add('hidden');
+
+                            if (menu === langMenuMobile && langMenuDesktop)
+                                langMenuDesktop.classList.add('hidden');
+
+                            menu.classList.toggle('hidden');
+                        });
+                    }
+                };
+
+                setupLangSwitcher(langBtnDesktop, langMenuDesktop);
+                setupLangSwitcher(langBtnMobile, langMenuMobile);
+
+                window.addEventListener('click', () => {
+                    if (langMenuDesktop && !langMenuDesktop.classList.contains('hidden'))
+                        langMenuDesktop.classList.add('hidden');
+
+                    if (langMenuMobile && !langMenuMobile.classList.contains('hidden'))
+                        langMenuMobile.classList.add('hidden');
+                });
+
+                const typingTextElement = document.getElementById('typing-text');
+                const words = ["Innovate.", "Automate.", "Protect."];
+                let wordIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+                
+                function type() {
+                    const currentWord = words[wordIndex];
+                    if (isDeleting) {
+                        typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
+                        charIndex--;
+                    } else {
+                        typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
+                        charIndex++;
+                    }
+
+                    let typeSpeed = isDeleting ? 100 : 200;
+
+                    if (!isDeleting && charIndex === currentWord.length) {
+                        typeSpeed = 2000;
+                        isDeleting = true;
+                    } else if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        wordIndex = (wordIndex + 1) % words.length;
+                        typeSpeed = 500;
+                    }
+
+                    setTimeout(type, typeSpeed);
+                }
+
+                if (typingTextElement) {
+                     setTimeout(() => {
+                        typingTextElement.classList.remove('hidden');
+                        type();
+                    }, 500);
+                }
+
+                const revealElements = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting)
+                            entry.target.classList.add('visible');
+                    });
+                }, {
+                    threshold: 0.1
+                });
+
+                revealElements.forEach(el => observer.observe(el));
+            });
+        </script>
+    </body>
+</html>

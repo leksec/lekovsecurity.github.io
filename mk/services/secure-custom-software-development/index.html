@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="mk" class="scroll-smooth" style="-ms-overflow-style: none; scrollbar-width: none;">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB54M68BRK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KB54M68BRK');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Lekov Security изработува софтвер по нарачка со безбедност во неговото јадро. Нашиот процес на развој, кој ја става безбедноста на прво место, создава сигурни, скалабилни и безбедни апликации.">
+        <meta name="google-site-verification" content="J3I7DvfYbsikEyJBH8tImi7D3e5R0a6CrtMJTjmJlKA" />
+
+        <title>Безбеден Развој на Софтвер | Lekov Security</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+        <link rel="canonical" href="https://lekovsecurity.mk/mk/services/secure-custom-software-development">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lekovsecurity.mk/mk/services/secure-custom-software-development">
+        <meta property="og:title" content="Lekov Security - Безбеден Развој на Софтвер">
+        <meta property="og:description" content="Ние изработуваме софтвер по нарачка прилагоден на вашите деловни процеси, со безбедност интегрирана од самиот почеток.">
+        <meta property="og:image" content="https://lekovsecurity.mk/assets/images/og-image.png">
+        <meta property="og:site_name" content="Lekov Security">
+        <meta property="og:locale" content="mk_MK">
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+        <style type="text/tailwindcss">
+            @theme {
+                --color-cyber-dark: #050505;
+                --color-cyber-secondary: #111111;
+                --color-cyber-accent: #39FF14;
+                --color-cyber-light: #E0E0E0;
+
+                --font-sans: 'Inter', 'sans-serif';
+                --font-mono: 'JetBrains Mono', 'monospace';
+                --font-display: 'Orbitron', 'sans-serif';
+            }
+
+            @keyframes pan-grid {
+                0% { background-position: 0 0; }
+                100% { background-position: 2000px 2000px; }
+            }
+
+            @keyframes blink {
+                50% { opacity: 0; }
+            }
+
+            @layer base {
+                body::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: 
+                        linear-gradient(to right, rgba(57, 255, 20, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+                    background-size: 40px 40px;
+                    z-index: -1;
+                    animation: pan-grid 200s linear infinite;
+                }
+            }
+
+            @layer utilities {
+                .text-glow {
+                    text-shadow: 0 0 8px theme('colors.cyber.accent'), 0 0 20px theme('colors.cyber.accent');
+                }
+
+                .box-glow {
+                    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+                }
+
+                .reveal {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                }
+
+                .reveal.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Безбеден Развој на Софтвер | Lekov Security",
+                "description": "Lekov Security изработува софтвер по нарачка со безбедност во неговото јадро. Нашиот процес на развој, кој ја става безбедноста на прво место, создава сигурни, скалабилни и безбедни апликации.",
+                "url": "https://lekovsecurity.mk/mk/services/secure-custom-software-development",
+                "inLanguage": "mk-MK",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Lekov Security",
+                    "url": "https://lekovsecurity.mk/",
+                    "logo": "https://lekovsecurity.mk/assets/images/logo.png",
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+389-74-221-337",
+                        "contactType": "customer service"
+                    },
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Kratovo",
+                        "addressCountry": "MK"
+                    }
+                },
+                "mainEntity": {
+                    "@type": "Service",
+                    "name": "Безбеден Развој на Софтвер",
+                    "serviceType": "Безбеден развој на софтвер",
+                    "description": "Ние изработуваме апликации по нарачка прилагодени на вашите уникатни деловни процеси, интегрирајќи безбедност во секоја фаза од животниот циклус на развојот.",
+                    "provider": {
+                        "@id": "https://lekovsecurity.mk/#organization"
+                    },
+                    "areaServed": {
+                        "@type": "Country",
+                        "name": "Северна Македонија"
+                    },
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "name": "Клучни Карактеристики на Нашата Услуга",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Процес на Развој со Безбедност на Прво Место"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Транспарентен и Колаборативен Пристап"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Ефикасен и Сигурен Код"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Решенија кои Растат со Вашиот Бизнис"
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "name": "Континуирана Поддршка и Одржување"
+                                }
+                            }
+                        ]
+                    },
+                    "category": [
+                        "BusinessApplication",
+                        "Web Application Development",
+                        "Secure SDLC",
+                        "Custom Software Development"
+                    ]
+                }
+            }
+        </script>
+    </head>
+
+    <body class="bg-cyber-dark text-cyber-light font-sans antialiased">
+        <header id="header" class="bg-cyber-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-cyber-accent/20 transition-all duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/mk/" class="flex items-center space-x-3">
+                        <img src="/assets/images/logo.svg" alt="Lekov Security - Лого за Сајбер Безбедност и Софтверски Решенија" class="h-12 w-auto">
+                        <span class="text-xl sm:text-2xl font-display font-bold text-cyber-accent">Lekov Security<span class="text-white">.</span></span>
+                    </a>
+
+                    <div class="hidden md:flex items-center space-x-6">
+                        <nav class="flex items-center space-x-8">
+                            <a href="/mk/" class="font-mono text-sm hover:text-cyber-accent transition-colors">/назад</a>
+                        </nav>
+
+                        <div class="relative" id="lang-switcher-desktop">
+                            <button id="lang-btn-desktop" class="flex items-center font-mono text-sm hover:text-cyber-accent transition-colors">
+                                <span>/јазик/мк</span>
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+
+                            <div id="lang-menu-desktop" class="hidden absolute right-0 mt-2 py-2 w-24 bg-cyber-secondary border border-cyber-accent/30 box-glow">
+                                <a href="/services/secure-custom-software-development" class="block px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/en</a>
+                                <a href="/mk/services/secure-custom-software-development" class="block px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/mk</a>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="px-5 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                            [ /контакт ]
+                        </a>
+                    </div>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-cyber-light focus:outline-none">
+                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden border-t border-cyber-accent/20">
+                <nav class="flex flex-col items-center space-y-5 py-5">
+                    <a href="/mk/" class="font-mono hover:text-cyber-accent transition-colors">/назад</a>
+                    
+                    <div class="relative" id="lang-switcher-mobile">
+                        <button id="lang-btn-mobile" class="flex items-center font-mono hover:text-cyber-accent transition-colors">
+                            <span>/јазик/мк</span>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+
+                        <div id="lang-menu-mobile" class="hidden absolute left-1/2 -translate-x-1/2 mt-2 py-2 w-24 bg-cyber-secondary border border-cyber-accent/30 box-glow z-10">
+                            <a href="/services/secure-custom-software-development" class="block text-center px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/en</a>
+                            <a href="/mk/services/secure-custom-software-development" class="block text-center px-4 py-2 font-mono text-sm text-cyber-light hover:bg-cyber-accent hover:text-cyber-dark">/mk</a>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="mt-2 px-6 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                        [ /контакт ]
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white mb-4 reveal">
+                        Безбеден Развој на<br><span class="text-cyber-accent text-glow">Софтвер</span>
+                    </h1>
+                    <p class="font-mono text-cyber-accent mb-8 reveal" style="transition-delay: 100ms;">// Градење на Робустни Апликации, Безбедни по Дизајн</p>
+                    <p class="text-lg sm:text-xl text-cyber-light/80 max-w-3xl mx-auto mb-10 reveal" style="transition-delay: 200ms;">
+                        Во денешниот дигитален свет, готовите софтверски решенија не секогаш одговараат. Ние изработуваме апликации по нарачка прилагодени на вашите уникатни деловни процеси, интегрирајќи безбедност во секоја фаза од животниот циклус на развојот.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 reveal" style="transition-delay: 400ms;">
+                        <a href="#methodology" class="px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Нашиот Процес
+                        </a>
+
+                        <a href="#contact" class="px-8 py-3 bg-transparent text-cyber-accent font-mono font-bold border-2 border-cyber-accent hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Започни Проект
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="reveal text-center lg:text-left">
+                            <h2 class="font-display text-4xl font-bold text-white mb-4">Код Кој Работи за Вас</h2>
+                            <p class="font-mono text-cyber-accent mb-6">// Зошто е Важен Пристапот со Безбедност на Прво Место</p>
+                            <p class="text-cyber-light/80 leading-relaxed">
+                                Нашата филозофија за развој се фокусира на градење софтвер кој не е само моќен и ефикасен, туку и инхерентно безбеден. Со решавање на безбедноста од самиот почеток, ние спречуваме ранливости пред тие да можат да бидат искористени, создавајќи сигурни, скалабилни решенија кои ги штитат вашите податоци и растат со вашиот бизнис.
+                            </p>
+                        </div>
+
+                        <div class="font-mono text-sm bg-cyber-dark p-6 border border-cyber-accent/30 reveal" style="transition-delay: 200ms;">
+                            <p><span class="text-cyber-accent">lekov@security:~$</span> ./build --secure</p>
+                            <p class="my-2 text-cyber-light">Компајлирање со принципи за безбедност на прво место...</p>
+                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Основа:</span> Дизајнирана е скалабилна архитектура.</p>
+                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Кодна база:</span> Напишан е ефикасен и сигурен код.</p>
+                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Тестирање:</span> Континуирана безбедносна валидација.</p>
+                            <p class="mt-2 text-cyber-light">Изградбата е завршена. Апликацијата е безбедна и спремна.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="methodology" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Нашиот Безбеден Животен Циклус на Развој</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Процес за Градење на Безбеден Софтвер</p>
+                        <p class="text-cyber-light/80 max-w-3xl mx-auto mt-4">Ние следиме структуриран, повеќефазен процес на развој за да обезбедиме квалитет, безбедност и усогласеност со вашите деловни цели на секој чекор.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 01_ПЛАНИРАЊЕ И ДИЗАЈН</h3>
+                            <p class="text-cyber-light/80">Соработуваме за да го дефинираме опсегот на проектот, функционалните барања и метриките за успех, дизајнирајќи безбедна и скалабилна архитектура од првиот ден.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 100ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 02_БЕЗБЕДНО КОДИРАЊЕ</h3>
+                            <p class="text-cyber-light/80">Нашите програмери пишуваат чист, ефикасен и одржлив код, придржувајќи се до индустриските стандарди за безбедно кодирање за да се минимизираат ранливостите.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 200ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 03_ТЕСТИРАЊЕ И ОБЕЗБЕДУВАЊЕ НА КВАЛИТЕТ</h3>
+                            <p class="text-cyber-light/80">Спроведуваме ригорозно тестирање, вклучувајќи прегледи на код, функционално тестирање и безбедносни проценки, за да се осигураме дека апликацијата е робустна и безбедна.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 300ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 04_ИМПЛЕМЕНТАЦИЈА И ПОДДРШКА</h3>
+                            <p class="text-cyber-light/80">Го управуваме процесот на имплементација за непречено лансирање и обезбедуваме континуирано одржување и поддршка за да се гарантира долгорочна безбедност и перформанси.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="features" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Клучни Карактеристики на Нашата Услуга</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Што Добивате кога Градите со Нас</p>
+                        <p class="text-cyber-light/80 max-w-3xl mx-auto mt-4">Нашата услуга е изградена на три столба кои гарантираат дека ќе добиете висококвалитетна, безбедна и идна апликација.</p>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-x-12 gap-y-6 font-mono text-sm">
+                        <div class="reveal"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Процес на Развој со Безбедност на Прво Место</p></div>
+                        <div class="reveal" style="transition-delay: 50ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Транспарентен и Колаборативен Пристап</p></div>
+                        <div class="reveal" style="transition-delay: 100ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Ефикасен и Сигурен Код</p></div>
+                        <div class="reveal" style="transition-delay: 150ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Принципи на Безбедност по Дизајн</p></div>
+                        <div class="reveal" style="transition-delay: 200ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Решенија кои Растат со Вашиот Бизнис</p></div>
+                        <div class="reveal" style="transition-delay: 250ms;"><p class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Континуирана Поддршка и Одржување</p></div>
+
+                        <div class="reveal md:col-span-2 text-center" style="transition-delay: 400ms;">
+                            <p class="text-cyber-accent/80 italic">// Софтвер по нарачка што го зајакнува вашиот бизнис...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Започнете го Вашиот Софтверски Проект</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Ајде да Разговараме за Вашите Потреби за Развој</p>
+                    </div>
+
+                    <div class="text-center mb-10 font-mono reveal">
+                        <p class="text-cyber-light mt-2">
+                            Јавете ни се на <a href="tel:+38974221337" class="text-cyber-accent hover:underline">+389 74 221 337</a>
+                        </p>
+                        <div class="my-4">или испратете ни порака.</div>
+                    </div>
+
+                    <div class="max-w-2xl mx-auto reveal">
+                        <form action="https://submit-form.com/LFz4XaH40" method="POST" class="space-y-6">
+                            <input type="hidden" name="_redirect" value="https://lekovsecurity.mk/mk/thanks.html">
+                            <input type="hidden" name="_email.subject" value="Software Development">
+
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="flex-1">
+                                    <label for="name" class="font-mono text-sm text-cyber-accent block mb-2">// Вашето Име</label>
+                                    <input type="text" id="name" name="name" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="email" class="font-mono text-sm text-cyber-accent block mb-2">// Вашата Е-пошта</label>
+                                    <input type="email" id="email" name="email" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="font-mono text-sm text-cyber-accent block mb-2">// Кажете ни за вашиот проект</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all resize-none" placeholder="Накратко опишете го вашиот проект, неговите цели и сите познати технички барања..."></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 cursor-pointer">
+                                    Испрати Барање
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-cyber-accent/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-cyber-light/50">
+                <p class="font-mono text-sm">&copy; 2025 Lekov Security. Сите права се задржани.</p>
+                <p class="font-mono text-sm mt-1">Кратово, Северна Македонија</p>
+                <p class="font-mono text-xs mt-2">Вашиот Партнер за Сајбер Безбедност и Безбеден Развој на Софтвер.</p>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuOpenIcon = document.getElementById('menu-open-icon');
+                const menuCloseIcon = document.getElementById('menu-close-icon');
+
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    menuOpenIcon.classList.toggle('hidden');
+                    menuCloseIcon.classList.toggle('hidden');
+                });
+
+                mobileMenu.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A') {
+                        mobileMenu.classList.add('hidden');
+                        menuOpenIcon.classList.remove('hidden');
+                        menuCloseIcon.classList.add('hidden');
+                    }
+                });
+
+                const langBtnDesktop = document.getElementById('lang-btn-desktop');
+                const langMenuDesktop = document.getElementById('lang-menu-desktop');
+                const langBtnMobile = document.getElementById('lang-btn-mobile');
+                const langMenuMobile = document.getElementById('lang-menu-mobile');
+
+                const setupLangSwitcher = (btn, menu) => {
+                    if (btn && menu) {
+                        btn.addEventListener('click', (event) => {
+                            event.stopPropagation();
+                            menu.classList.toggle('hidden');
+                        });
+                    }
+                };
+
+                setupLangSwitcher(langBtnDesktop, langMenuDesktop);
+                setupLangSwitcher(langBtnMobile, langMenuMobile);
+
+                window.addEventListener('click', () => {
+                    if (langMenuDesktop && !langMenuDesktop.classList.contains('hidden'))
+                        langMenuDesktop.classList.add('hidden');
+
+                    if (langMenuMobile && !langMenuMobile.classList.contains('hidden'))
+                        langMenuMobile.classList.add('hidden');
+                });
+
+                const revealElements = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting)
+                            entry.target.classList.add('visible');
+                    });
+                }, {
+                    threshold: 0.1
+                });
+                revealElements.forEach(el => observer.observe(el));
+            });
+        </script>
+    </body>
+</html>
