@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" style="-ms-overflow-style: none; scrollbar-width: none;">
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB54M68BRK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KB54M68BRK');
+        </script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Continuous security monitoring with quarterly vulnerability assessments. Track remediation progress and maintain visibility into your security posture with our automated platform.">
+        <meta name="google-site-verification" content="J3I7DvfYbsikEyJBH8tImi7D3e5R0a6CrtMJTjmJlKA" />
+
+        <title>Continuous Security Monitoring | Lekov Security</title>
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+
+        <link rel="canonical" href="https://lekovsecurity.mk/services/continuous-security-monitoring/">
+        <link rel="alternate" hreflang="en" href="https://lekovsecurity.mk/services/continuous-security-monitoring/">
+
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://lekovsecurity.mk/services/continuous-security-monitoring/">
+        <meta property="og:title" content="Lekov Security - Continuous Security Monitoring">
+        <meta property="og:description" content="Quarterly security assessments and continuous vulnerability monitoring. Track remediation progress and maintain visibility into your security posture.">
+        <meta property="og:image" content="https://lekovsecurity.mk/assets/images/og-image.png">
+        <meta property="og:site_name" content="Lekov Security">
+        <meta property="og:locale" content="en_US">
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+        <style type="text/tailwindcss">
+            @theme {
+                --color-cyber-dark: #050505;
+                --color-cyber-secondary: #111111;
+                --color-cyber-accent: #39FF14;
+                --color-cyber-light: #E0E0E0;
+
+                --font-sans: 'Inter', 'sans-serif';
+                --font-mono: 'JetBrains Mono', 'monospace';
+                --font-display: 'Orbitron', 'sans-serif';
+            }
+
+            @keyframes pan-grid {
+                0% { background-position: 0 0; }
+                100% { background-position: 2000px 2000px; }
+            }
+
+            @keyframes blink {
+                50% { opacity: 0; }
+            }
+
+            @layer base {
+                body::before {
+                    content: '';
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: 
+                        linear-gradient(to right, rgba(57, 255, 20, 0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
+                    background-size: 40px 40px;
+                    z-index: -1;
+                    animation: pan-grid 200s linear infinite;
+                }
+            }
+
+            @layer utilities {
+                .text-glow {
+                    text-shadow: 0 0 8px theme('colors.cyber.accent'), 0 0 20px theme('colors.cyber.accent');
+                }
+
+                .box-glow {
+                    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+                }
+
+                .reveal {
+                    opacity: 0;
+                    transform: translateY(20px);
+                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+                }
+
+                .reveal.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "WebPage",
+                        "name": "Continuous Security Monitoring | Lekov Security",
+                        "description": "Continuous security monitoring with quarterly vulnerability assessments. Track remediation progress and maintain visibility into your security posture with our automated platform.",
+                        "url": "https://lekovsecurity.mk/services/continuous-security-monitoring/",
+                        "inLanguage": "en-US",
+                        "isPartOf": {
+                            "@type": "WebSite",
+                            "name": "Lekov Security",
+                            "url": "https://lekovsecurity.mk/"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Lekov Security",
+                            "url": "https://lekovsecurity.mk/",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://lekovsecurity.mk/assets/images/logo.png",
+                                "width": 512,
+                                "height": 512
+                            },
+                            "contactPoint": {
+                                "@type": "ContactPoint",
+                                "telephone": "+389-74-221-337",
+                                "email": "valentin@lekov.mk",
+                                "contactType": "Penetration Testing Services",
+                                "areaServed": [
+                                    {
+                                        "@type": "Country",
+                                        "name": "North Macedonia",
+                                        "identifier": "MK"
+                                    },
+                                    {
+                                        "@type": "Place", 
+                                        "name": "Europe",
+                                        "identifier": "EU",
+                                        "description": "European Union member states"
+                                    }
+                                ],
+                                "availableLanguage": ["en"]
+                            },
+                            "address": {
+                                "@type": "PostalAddress",
+                                "addressLocality": "Kratovo",
+                                "addressCountry": "MK"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "Organization",
+                        "@id": "https://lekovsecurity.mk/#organization",
+                        "name": "Lekov Security",
+                        "url": "https://lekovsecurity.mk/",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://lekovsecurity.mk/assets/images/logo.png",
+                            "width": 512,
+                            "height": 512
+                        },
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+389-74-221-337",
+                            "email": "valentin@lekov.mk",
+                            "contactType": "Penetration Testing Services",
+                            "areaServed": [
+                                {
+                                    "@type": "Country",
+                                    "name": "North Macedonia",
+                                    "identifier": "MK"
+                                },
+                                {
+                                    "@type": "Place", 
+                                    "name": "Europe",
+                                    "identifier": "EU",
+                                    "description": "European Union member states"
+                                }
+                            ],
+                            "availableLanguage": ["en"]
+                        },
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Kratovo",
+                            "addressCountry": "MK"
+                        },
+                        "sameAs": [
+                            "https://linkedin.com/company/leksec",
+                            "https://github.com/leksec"
+                        ]
+                    },   
+                    {
+                        "@type": "Service",
+                        "name": "Continuous Security Monitoring",
+                        "serviceType": "Cybersecurity",
+                        "description": "Ongoing vulnerability management through our automated platform. Receive quarterly security assessments, track remediation progress, and maintain continuous visibility into your security posture.",
+                        "provider": {
+                            "@id": "https://lekovsecurity.mk/#organization"
+                        },
+                        "areaServed": [
+                            {
+                                "@type": "Country",
+                                "name": "North Macedonia",
+                                "identifier": "MK"
+                            },
+                            {
+                                "@type": "Place", 
+                                "name": "Europe",
+                                "identifier": "EU",
+                                "description": "European Union member states"
+                            }
+                        ]
+                    }
+                ]
+            }
+        </script>
+    </head>
+
+    <body class="bg-cyber-dark text-cyber-light font-sans antialiased">
+        <header id="header" class="bg-cyber-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-cyber-accent/20 transition-all duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <a href="/" class="flex items-center space-x-3">
+                        <img src="/assets/images/logo.svg" alt="Lekov Security Logo" class="h-12 w-auto">
+                        <span class="text-xl sm:text-2xl font-display font-bold text-cyber-accent">Lekov Security<span class="text-white">.</span></span>
+                    </a>
+
+                    <div class="hidden md:flex items-center space-x-6">
+                        <nav class="flex items-center space-x-8">
+                            <a href="/" class="font-mono text-sm hover:text-cyber-accent transition-colors">/back</a>
+                        </nav>
+
+                        <a href="#contact" class="px-5 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                            [ /contact ]
+                        </a>
+                    </div>
+
+                    <button id="mobile-menu-btn" class="md:hidden text-cyber-light focus:outline-none">
+                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden border-t border-cyber-accent/20">
+                <nav class="flex flex-col items-center space-y-5 py-5">
+                    <a href="/" class="font-mono hover:text-cyber-accent transition-colors">/back</a>
+
+                    <a href="#contact" class="mt-2 px-6 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                        [ /contact ]
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white mb-4 reveal">
+                        Continuous<br><span class="text-cyber-accent text-glow">Security Monitoring</span>
+                    </h1>
+                    <p class="font-mono text-cyber-accent mb-8 reveal" style="transition-delay: 100ms;">// Always-On Vulnerability Management</p>
+                    <p class="text-lg sm:text-xl text-cyber-light/80 max-w-3xl mx-auto mb-10 reveal" style="transition-delay: 200ms;">
+                        Security is not a one-time event. As your application evolves, new vulnerabilities emerge. Continuous monitoring ensures you stay ahead of threats with quarterly assessments and real-time visibility into your security posture.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center gap-4 reveal" style="transition-delay: 400ms;">
+                        <a href="#approach" class="px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Our Approach
+                        </a>
+
+                        <a href="#contact" class="px-8 py-3 bg-transparent text-cyber-accent font-mono font-bold border-2 border-cyber-accent hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300 transform hover:-translate-y-1">
+                            &gt; Start Monitoring
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="reveal text-center lg:text-left">
+                            <h2 class="font-display text-4xl font-bold text-white mb-4">Maintain Continuous Security Visibility</h2>
+                            <p class="font-mono text-cyber-accent mb-6">// Automated Platform + Expert Analysis</p>
+                            <p class="text-cyber-light/80 leading-relaxed mb-4">
+                                Our continuous security monitoring service provides ongoing vulnerability management through our automated platform. You receive quarterly security assessments that track your application's security posture over time, identifying new vulnerabilities as they emerge.
+                            </p>
+                            <p class="text-cyber-light/80 leading-relaxed">
+                                Track remediation progress, receive priority vulnerability identification, and maintain continuous visibility into your security status. This transforms security from reactive to proactive, catching issues before they become breaches.
+                            </p>
+                        </div>
+
+                        <div class="font-mono text-sm bg-cyber-dark p-6 border border-cyber-accent/30 reveal" style="transition-delay: 200ms;">
+                            <p><span class="text-cyber-accent">lekov@security:~$</span> ./status --quarterly</p>
+                            <p class="my-2 text-cyber-light">Running quarterly security assessment...</p>
+                            <p><span class="text-cyber-accent">[✓]</span> <span class="text-white">Scan Complete:</span> 312 endpoints analyzed</p>
+                            <p><span class="text-cyber-accent">[!]</span> <span class="text-white">New Issues:</span> 5 vulnerabilities detected (2 high, 3 medium)</p>
+                            <p><span class="text-cyber-accent">[✓]</span> <span class="text-white">Remediated:</span> 18 previous vulnerabilities confirmed fixed</p>
+                            <p><span class="text-cyber-accent">[i]</span> <span class="text-white">Expert Review:</span> All findings manually validated</p>
+                            <p class="mt-2 text-cyber-light">Quarterly report generated. Client notified.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="approach" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">How Continuous Monitoring Works</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Automated Scanning + Human Expertise</p>
+                        <p class="text-cyber-light/80 max-w-3xl mx-auto mt-4">Our platform performs comprehensive quarterly security assessments, delivering detailed reports with actionable insights. This ongoing process ensures your security posture evolves with your application.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 01_AUTOMATED_SCANNING</h3>
+                            <p class="text-cyber-light/80">Every quarter, our platform runs comprehensive automated vulnerability scans across your entire application surface, checking for new vulnerabilities, misconfigurations, and security issues.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 100ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 02_EXPERT_VALIDATION</h3>
+                            <p class="text-cyber-light/80">OSWE-certified security experts manually review every finding to eliminate false positives, validate exploitability, and prioritize based on actual business risk. You get actionable intelligence, not noise.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 200ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 03_DETAILED_REPORTING</h3>
+                            <p class="text-cyber-light/80">Quarterly HTML/PDF reports include validated findings with clear descriptions, severity ratings, and step-by-step remediation guidance so your team knows exactly what to fix and how.</p>
+                        </div>
+
+                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal" style="transition-delay: 300ms;">
+                            <h3 class="font-mono text-lg font-bold text-cyber-accent mb-3">// 04_REMEDIATION_SUPPORT</h3>
+                            <p class="text-cyber-light/80">As you fix vulnerabilities, we provide ongoing support and guidance. Follow-up testing in the next quarterly assessment confirms issues are properly resolved and haven't reappeared.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 text-center reveal" style="transition-delay: 400ms;">
+                        <p class="text-cyber-light/80 max-w-2xl mx-auto">
+                            <strong class="text-white">Why quarterly?</strong> Quarterly assessments provide continuous security coverage while maintaining cost-effectiveness. You stay protected against emerging threats without the overhead of constant scanning.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="packages" class="py-20 lg:py-32 bg-cyber-secondary/80">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Continuous Monitoring for Web Applications</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Choose Your Protection Level</p>
+                        <p class="text-cyber-light/80 max-w-3xl mx-auto mt-4">Ongoing quarterly security assessments with expert validation. All packages include automated scanning combined with human expertise to eliminate false positives.</p>
+                    </div>
+
+                    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                        <div class="bg-cyber-dark border border-cyber-accent/30 p-8 reveal flex flex-col">
+                            <div class="text-center mb-6">
+                                <h3 class="font-display text-2xl font-bold text-white mb-2">Standard Monitoring</h3>
+                                <div class="font-mono text-4xl font-bold text-cyber-accent mb-2">€4,800<span class="text-xl text-cyber-light/60">/year</span></div>
+                                <p class="text-cyber-light/60 text-sm">€1,200 quarterly - Comprehensive protection</p>
+                            </div>
+
+                            <ul class="space-y-3 mb-8 flex-grow">
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Comprehensive scan every 3 months</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Up to 5 target domains/applications</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Manual validation of all findings</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Quarterly HTML/PDF security reports</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Immediate alerts for critical vulnerabilities</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Email support (48-hour response)</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Direct Discord channel access</span></li>
+                            </ul>
+
+                            <div class="text-center mb-6">
+                                <p class="text-cyber-light/60 text-sm italic">Perfect for SaaS companies with regular deployments</p>
+                            </div>
+
+                            <a href="#contact" class="block w-full text-center py-3 border-2 border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
+                                Get Started
+                            </a>
+                        </div>
+
+                        <div class="bg-cyber-dark border-2 border-cyber-accent p-8 reveal flex flex-col relative" style="transition-delay: 100ms;">
+                            <div class="absolute top-0 right-0 bg-cyber-accent text-cyber-dark px-3 py-1 text-xs font-mono font-bold">RECOMMENDED</div>
+
+                            <div class="text-center mb-6">
+                                <h3 class="font-display text-2xl font-bold text-white mb-2">Premium Monitoring</h3>
+                                <div class="font-mono text-4xl font-bold text-cyber-accent mb-2">€7,200<span class="text-xl text-cyber-light/60">/year</span></div>
+                                <p class="text-cyber-light/60 text-sm">€1,800 quarterly - Maximum coverage</p>
+                            </div>
+
+                            <ul class="space-y-3 mb-8 flex-grow">
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Everything in <strong>Standard Monitoring</strong></span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Up to 10 target domains/applications</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">5 hours/quarter of remediation consulting included</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">Priority support (24-hour response)</span></li>
+                                <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span><span class="text-cyber-light/80">15% discount on annual penetration testing</span></li>
+                            </ul>
+
+                            <div class="text-center mb-6">
+                                <p class="text-cyber-light/60 text-sm italic">Ideal for high-growth companies & regulated industries</p>
+                            </div>
+
+                            <a href="#contact" class="block w-full text-center py-3 bg-cyber-accent text-cyber-dark font-mono text-sm font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-3xl mx-auto mt-12 text-center reveal" style="transition-delay: 200ms;">
+                        <p class="text-cyber-light/80 text-sm mb-4">Not sure which package is right for you? <a href="#contact" class="text-cyber-accent hover:underline font-medium">Schedule a free consultation</a> to discuss your security needs.</p>
+                        <p class="text-cyber-light/60 text-xs">All packages include a 30-day money-back guarantee if you're not satisfied with the first quarterly assessment.</p>
+                    </div>
+
+                    <div class="max-w-4xl mx-auto mt-16 p-8 bg-cyber-dark border-l-4 border-cyber-accent/50 reveal" style="transition-delay: 300ms;">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="text-cyber-accent text-2xl">⚠</div>
+                            <h3 class="font-mono text-lg font-bold text-white">Important Note</h3>
+                        </div>
+                        
+                        <p class="text-cyber-light/80 leading-relaxed mb-3">
+                            <strong>Continuous security monitoring does not replace manual penetration testing.</strong> While our quarterly monitoring provides ongoing vulnerability detection and tracking, it cannot replicate the depth and expertise of comprehensive human-led penetration testing.
+                        </p>
+
+                        <p class="text-cyber-light/80 leading-relaxed">
+                            Manual penetration tests uncover complex business logic flaws, chained vulnerabilities, and sophisticated attack vectors that automated tools cannot detect. We recommend combining continuous monitoring with <a href="/services/web-application-penetration-testing/" class="text-cyber-accent hover:underline">annual comprehensive penetration tests</a> for maximum security coverage and compliance readiness.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="py-20 lg:py-32">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12 reveal">
+                        <h2 class="font-display text-4xl font-bold text-white">Start Continuous Monitoring</h2>
+                        <p class="font-mono text-cyber-accent mt-2">// Let's Secure Your Applications</p>
+                    </div>
+
+                    <div class="text-center mb-10 font-mono reveal">
+                        <p class="text-cyber-light mt-2">
+                            Call us at <a href="tel:+38974221337" class="text-cyber-accent hover:underline">+389 74 221 337</a>
+                        </p>
+                        <div class="my-4">or send us a message.</div>
+                    </div>
+
+                    <div class="max-w-2xl mx-auto reveal">
+                        <form action="https://submit-form.com/LFz4XaH40" method="POST" class="space-y-6">
+                            <input type="hidden" name="_redirect" value="https://lekovsecurity.mk/thanks.html">
+                            <input type="hidden" name="_email.subject" value="Continuous Security Monitoring">
+
+                            <div class="flex flex-col md:flex-row gap-6">
+                                <div class="flex-1">
+                                    <label for="name" class="font-mono text-sm text-cyber-accent block mb-2">// Your Name</label>
+                                    <input type="text" id="name" name="name" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+
+                                <div class="flex-1">
+                                    <label for="email" class="font-mono text-sm text-cyber-accent block mb-2">// Your Email</label>
+                                    <input type="email" id="email" name="email" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="font-mono text-sm text-cyber-accent block mb-2">// Tell us about your monitoring needs</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all resize-none" placeholder="What applications do you need monitored? How many domains/assets? Any other specific requirements?"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="w-full px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 cursor-pointer">
+                                    Request Information
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-cyber-accent/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="https://linkedin.com/company/leksec" target="_blank" rel="noopener noreferrer" class="text-cyber-light/50 hover:text-cyber-accent transition-colors" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/leksec" target="_blank" rel="noopener noreferrer" class="text-cyber-light/50 hover:text-cyber-accent transition-colors" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="text-center text-cyber-light/50">
+                    <p class="font-mono text-sm">&copy; 2025 Lekov Security. All Rights Reserved.</p>
+                    <p class="font-mono text-xs mt-2">Expert Cybersecurity Services.</p>
+                    <p class="font-mono text-sm mt-2">Kratovo, North Macedonia</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const menuOpenIcon = document.getElementById('menu-open-icon');
+                const menuCloseIcon = document.getElementById('menu-close-icon');
+
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    menuOpenIcon.classList.toggle('hidden');
+                    menuCloseIcon.classList.toggle('hidden');
+                });
+
+                mobileMenu.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'A') {
+                        mobileMenu.classList.add('hidden');
+                        menuOpenIcon.classList.remove('hidden');
+                        menuCloseIcon.classList.add('hidden');
+                    }
+                });
+
+                const revealElements = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting)
+                            entry.target.classList.add('visible');
+                    });
+                }, {
+                    threshold: 0.1
+                });
+                revealElements.forEach(el => observer.observe(el));
+            });
+        </script>
+    </body>
+</html>
