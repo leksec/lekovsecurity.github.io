@@ -1,511 +1,666 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth" style="-ms-overflow-style: none; scrollbar-width: none;">
+<!doctype html>
+<html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KB54M68BRK"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-KB54M68BRK');
-        </script>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Lekov Security specializes in web application penetration testing and continuous security monitoring. Expert manual testing combined with automated platforms for ongoing vulnerability management.">
-        <meta name="google-site-verification" content="J3I7DvfYbsikEyJBH8tImi7D3e5R0a6CrtMJTjmJlKA" />
-
-        <title>Lekov Security | Expert Cybesecurity Services</title>
-        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
-
-        <link rel="canonical" href="https://lekovsecurity.mk/">
-        <link rel="alternate" hreflang="en" href="https://lekovsecurity.mk/">
-
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://lekovsecurity.mk/">
-        <meta property="og:title" content="Lekov Security - Expert Cybesecurity Services">
-        <meta property="og:description" content="Expert web application penetration testing and continuous security monitoring. Manual expertise combined with automated platforms for comprehensive vulnerability management.">
-        <meta property="og:image" content="https://lekovsecurity.mk/assets/images/og-image.png">
-        <meta property="og:site_name" content="Lekov Security">
-        <meta property="og:locale" content="en_US">
-
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-
-        <style type="text/tailwindcss">
-            @theme {
-                --color-cyber-dark: #050505;
-                --color-cyber-secondary: #111111;
-                --color-cyber-accent: #39FF14;
-                --color-cyber-light: #E0E0E0;
-
-                --font-sans: 'Inter', 'sans-serif';
-                --font-mono: 'JetBrains Mono', 'monospace';
-                --font-display: 'Orbitron', 'sans-serif';
-            }
-
-            @keyframes pan-grid {
-                0% { background-position: 0 0; }
-                100% { background-position: 2000px 2000px; }
-            }
-
-            @keyframes blink {
-                50% { opacity: 0; }
-            }
-
-            @layer base {
-                body::before {
-                    content: '';
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100vw;
-                    height: 100vh;
-                    background-image:
-                        linear-gradient(to right, rgba(57, 255, 20, 0.05) 1px, transparent 1px),
-                        linear-gradient(to bottom, rgba(57, 255, 20, 0.05) 1px, transparent 1px);
-                    background-size: 40px 40px;
-                    z-index: -1;
-                    animation: pan-grid 200s linear infinite;
-                }
-            }
-
-            @layer utilities {
-                .text-glow {
-                    text-shadow: 0 0 8px theme('colors.cyber.accent'), 0 0 20px theme('colors.cyber.accent');
-                }
-
-                .box-glow {
-                    box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
-                }
-
-                .reveal {
-                    opacity: 0;
-                    transform: translateY(20px);
-                    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-                }
-
-                .reveal.visible {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-
-                .typing-cursor::after {
-                    content: '_';
-                    animation: blink 1s step-end infinite;
-                }
-            }
-        </style>
-
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@graph": [
-                    {
-                        "@type": "Organization",
-                        "name": "Lekov Security",
-                        "url": "https://lekovsecurity.mk/",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://lekovsecurity.mk/assets/images/logo.png",
-                            "width": 512,
-                            "height": 512
-                        },
-                        "image": "https://lekovsecurity.mk/assets/images/logo.png",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "addressLocality": "Kratovo",
-                            "addressCountry": "MK"
-                        },
-                        "founder": {
-                            "@type": "Person",
-                            "name": "Valentin Lekov"
-                        },
-                        "description": "Lekov Security specializes in web application penetration testing and continuous security monitoring. We combine manual testing expertise with automated platforms for comprehensive vulnerability management.",
-                        "hasOfferCatalog": {
-                            "@type": "OfferCatalog",
-                            "name": "Penetration Testing Services",
-                            "itemListElement": [
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "@id": "https://lekovsecurity.mk/services/web-application-penetration-testing/"
-                                    }
-                                },
-                                {
-                                    "@type": "Offer",
-                                    "itemOffered": {
-                                        "@type": "Service",
-                                        "@id": "https://lekovsecurity.mk/services/continuous-security-monitoring/"
-                                    }
-                                }
-                            ]
-                        },
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "telephone": "+389-74-221-337",
-                            "email": "valentin@lekov.mk",
-                            "contactType": "Penetration Testing Services",
-                            "areaServed": [
-                                {
-                                    "@type": "Country",
-                                    "name": "North Macedonia",
-                                    "identifier": "MK"
-                                },
-                                {
-                                    "@type": "Place",
-                                    "name": "Europe",
-                                    "identifier": "EU",
-                                    "description": "European Union member states"
-                                }
-                            ],
-                            "availableLanguage": ["en"]
-                        },
-                        "sameAs": [
-                            "https://linkedin.com/company/leksec",
-                            "https://github.com/leksec"
-                        ]
-                    },
-                    {
-                        "@type": "WebSite",
-                        "url": "https://lekovsecurity.mk/",
-                        "name": "Lekov Security",
-                        "description": "We combine manual security assessments with automated continuous monitoring to identify and track vulnerabilities in your web applications.",
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "Lekov Security"
-                        },
-                        "inLanguage": "en"
-                    },
-                    {
-                        "@type": "Service",
-                        "serviceType": "Cybersecurity",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "Lekov Security"
-                        },
-                        "name": "Web Application Penetration Testing",
-                        "url": "https://lekovsecurity.mk/services/web-application-penetration-testing/",
-                        "description": "Comprehensive manual penetration testing for web applications and APIs. We identify critical vulnerabilities through expert-led assessments, delivering detailed reports with prioritized remediation guidance and proof of concept exploits."
-                    },
-                    {
-                        "@type": "Service",
-                        "serviceType": "Cybersecurity",
-                        "provider": {
-                            "@type": "Organization",
-                            "name": "Lekov Security"
-                        },
-                        "name": "Continuous Security Monitoring",
-                        "url": "https://lekovsecurity.mk/services/continuous-security-monitoring/",
-                        "description": "Ongoing vulnerability management with quarterly security assessments and reporting. Our automated platform continuously monitors your security posture, tracks remediation progress, and delivers actionable insights through a centralized dashboard."
-                    }
-                ]
-            }
-        </script>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Lekov Security, offensive security testing across applications, APIs, networks, infrastructure, and systems." name="description"/>
+        <meta content="#070908" name="theme-color"/>
+        <title>
+            Lekov Security &ndash; Offensive Security
+        </title>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+        <link href="styles.css" rel="stylesheet"/>
     </head>
-
-    <body class="bg-cyber-dark text-cyber-light font-sans antialiased">
-        <header id="header" class="bg-cyber-dark/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-cyber-accent/20 transition-all duration-300">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-20">
-                    <a href="/" class="flex items-center space-x-3">
-                        <img src="/assets/images/logo.svg" alt="Lekov Security Logo" class="h-12 w-auto">
-                        <span class="text-xl sm:text-2xl font-display font-bold text-cyber-accent">Lekov Security<span class="text-white">.</span></span>
-                    </a>
-
-                    <div class="hidden md:flex items-center space-x-6">
-                        <nav class="flex items-center space-x-8">
-                            <a href="#home" class="font-mono text-sm hover:text-cyber-accent transition-colors">/home</a>
-                            <a href="#about" class="font-mono text-sm hover:text-cyber-accent transition-colors">/about</a>
-                            <a href="#services" class="font-mono text-sm hover:text-cyber-accent transition-colors">/services</a>
-                        </nav>
-
-                        <a href="#contact" class="px-5 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
-                            [ /contact ]
-                        </a>
-                    </div>
-
-                    <button id="mobile-menu-btn" class="md:hidden text-cyber-light focus:outline-none">
-                        <svg id="menu-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                        <svg id="menu-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                    </button>
-                </div>
+    <body>
+        <div aria-hidden="true" class="noise">
+        </div>
+        <div aria-hidden="true" class="cursor-glow">
+        </div>
+        <header class="site-header">
+            <div class="brand">
+                <span aria-hidden="true" class="brand-mark">
+                    <svg viewbox="0 0 40 40">
+                        <path class="brand-mark-shield" d="M20 4.8L32 9.5V18.8C32 26.4 27.2 32.4 20 35.3C12.8 32.4 8 26.4 8 18.8V9.5L20 4.8Z"></path>
+                        <g class="brand-mark-target">
+                            <circle class="brand-mark-ring" cx="20" cy="19.2" r="6.4"></circle>
+                            <path class="brand-mark-crosshair" d="M20 9.9V14.3M20 24.1V28.5M10.7 19.2H15.1M24.9 19.2H29.3"></path>
+                            <circle class="brand-mark-core" cx="20" cy="19.2" r="1.6"></circle>
+                        </g>
+                    </svg>
+                </span>
+                <span>
+                    LEKOV SECURITY
+                </span>
             </div>
-
-            <div id="mobile-menu" class="hidden md:hidden border-t border-cyber-accent/20">
-                <nav class="flex flex-col items-center space-y-5 py-5">
-                    <a href="#home" class="font-mono hover:text-cyber-accent transition-colors">/home</a>
-                    <a href="#about" class="font-mono hover:text-cyber-accent transition-colors">/about</a>
-                    <a href="#services" class="font-mono hover:text-cyber-accent transition-colors">/services</a>
-
-                    <a href="#contact" class="mt-2 px-6 py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
-                        [ /contact ]
-                    </a>
-                </nav>
-            </div>
+            <nav aria-label="Main navigation" class="nav">
+                <a href="#services">
+                    <svg aria-hidden="true" class="nav-icon" viewbox="0 0 24 24">
+                        <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+                        <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+                        <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+                        <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+                    </svg>
+                    <span>
+                        Services
+                    </span>
+                </a>
+                <a href="#approach">
+                    <svg aria-hidden="true" class="nav-icon" viewbox="0 0 24 24">
+                        <circle cx="5" cy="18" r="2"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <circle cx="19" cy="6" r="2"></circle>
+                        <path d="M6.5 16.5l4-3M13.5 10.5l4-3M16 6h3v3"></path>
+                    </svg>
+                    <span>
+                        Approach
+                    </span>
+                </a>
+                <a href="#contact">
+                    <svg aria-hidden="true" class="nav-icon" viewbox="0 0 24 24">
+                        <path d="M4 6h16v12H4zM4 7l8 6 8-6"></path>
+                    </svg>
+                    <span>
+                        Contact
+                    </span>
+                </a>
+            </nav>
+            <button aria-controls="mobile-nav" aria-expanded="false" class="menu-toggle" type="button">
+                <svg aria-hidden="true" class="menu-icon" viewbox="0 0 24 24">
+                    <path d="M4 7h16M4 12h16M4 17h16"></path>
+                </svg>
+                <span>
+                    MENU
+                </span>
+            </button>
         </header>
-
+        <div aria-hidden="true" class="mobile-nav" id="mobile-nav">
+            <a href="#services">
+                <svg aria-hidden="true" class="nav-icon" viewbox="0 0 24 24">
+                    <rect height="7" rx="1" width="7" x="3" y="3"></rect>
+                    <rect height="7" rx="1" width="7" x="14" y="3"></rect>
+                    <rect height="7" rx="1" width="7" x="3" y="14"></rect>
+                    <rect height="7" rx="1" width="7" x="14" y="14"></rect>
+                </svg>
+                <span>
+                    Services
+                </span>
+            </a>
+            <a href="#approach">
+                <svg aria-hidden="true" class="nav-icon" viewbox="0 0 24 24">
+                    <circle cx="5" cy="18" r="2"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <circle cx="19" cy="6" r="2"></circle>
+                    <path d="M6.5 16.5l4-3M13.5 10.5l4-3M16 6h3v3"></path>
+                </svg>
+                <span>
+                    Approach
+                </span>
+            </a>
+            <a href="#contact">
+                <svg aria-hidden="true" class="nav-icon" viewbox="0 0 24 24">
+                    <path d="M4 6h16v12H4zM4 7l8 6 8-6"></path>
+                </svg>
+                <span>
+                    Contact
+                </span>
+            </a>
+        </div>
         <main>
-            <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-8">
-                <div class="max-w-4xl mx-auto">
-                    <img src="/assets/images/logo.svg" alt="Lekov Security Logo" class="h-48 sm:h-64 w-auto mx-auto mb-8 reveal">
-                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-display font-bold text-white mb-6 min-h-[3rem] sm:min-h-[5rem]">
-                        <span id="typing-text" class="text-cyber-accent text-glow typing-cursor hidden">Innovate. Automate. Protect.</span>
+            <section class="hero section-shell">
+                <div class="hero-copy reveal">
+                    <h1>
+                        Break it.
+                        <br/>
+                        <em>
+                            Prove it.
+                        </em>
+                        <br/>
+                        Fix it.
                     </h1>
-
-                    <p class="text-lg sm:text-xl text-cyber-light/80 max-w-2xl mx-auto mb-10 reveal" style="transition-delay: 200ms;">
-                        Expert web application penetration testing with quarterly security monitoring. CWES and OSWE-certified specialists delivering thorough assessments and ongoing vulnerability management.
+                    <p class="hero-lead">
+                        Independent offensive security testing across applications, APIs, networks, infrastructure, and systems, following the path an attacker would actually take.
                     </p>
-
-                    <div class="flex flex-col sm:flex-row justify-center gap-4 reveal" style="transition-delay: 400ms;">
-                        <a href="#services" class="px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 transform hover:-translate-y-1">
-                            &gt; View Services
+                    <div class="hero-actions">
+                        <a class="button button-scope" href="#services">
+                            Explore the services
+                            <span>
+                                &darr;
+                            </span>
                         </a>
-
-                        <a href="#contact" class="px-8 py-3 bg-transparent text-cyber-accent font-mono font-bold border-2 border-cyber-accent hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300 transform hover:-translate-y-1">
-                            &gt; Schedule Consultation
+                        <a class="button button-solid" href="#contact-form">
+                            Get in touch
+                            <span>
+                                &darr;
+                            </span>
                         </a>
                     </div>
                 </div>
-            </section>
-
-            <section id="about" class="py-20 lg:py-32 bg-cyber-secondary/80">
-                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <div class="reveal text-center lg:text-left">
-                            <h2 class="font-display text-4xl font-bold text-white mb-4">About Lekov Security</h2>
-                            <p class="font-mono text-cyber-accent mb-6">// Our Simplified Cybersecurity Philosophy</p>
-
-                            <p class="text-cyber-light/80 leading-relaxed mb-4">
-                                We specialize exclusively in offensive security testing — specifically web application and API penetration testing. Our approach combines deep manual expertise with custom automation platform to deliver thorough security assessments efficiently.
-                            </p>
-
-                            <p class="text-cyber-light/80 leading-relaxed">
-                                Unlike traditional annual assessments, we offer continuous security monitoring through our platform. Clients receive quarterly vulnerability reports, remediation tracking, and ongoing security insights — transforming penetration testing from a one-time event into an ongoing security partnership.
-                            </p>
+                <div aria-label="Animated attack surface visualization" class="hero-radar reveal reveal-delay">
+                    <div class="radar-status">
+                        <span class="status-dot">
+                        </span>
+                        <span id="radar-status-text">
+                            SCANNING EXTERNAL SURFACE
+                        </span>
+                    </div>
+                    <div class="radar-stage" id="radar-stage">
+                        <div class="radar-grid">
                         </div>
-
-                        <div class="font-mono text-sm bg-cyber-dark p-6 border border-cyber-accent/30 reveal" style="transition-delay: 200ms;">
-                            <p><span class="text-cyber-accent">lekov@security:~$</span> ./run --philosophy</p>
-                            <p class="my-2 text-cyber-light">Initializing core principles...</p>
-                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Innovation:</span> Always seeking better solutions.</p>
-                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Automation:</span> Making security fast and efficient.</p>
-                            <p><span class="text-cyber-accent">[OK]</span> <span class="text-white">Protection:</span> Your security is our mission.</p>
-                            <p class="mt-2 text-cyber-light">Protocol execution complete. Ready to help.</p>
+                        <div class="radar-crosshair horizontal">
+                        </div>
+                        <div class="radar-crosshair vertical">
+                        </div>
+                        <div class="radar-sweep">
+                        </div>
+                        <div class="radar-origin">
+                        </div>
+                        <div class="radar-ring ring-1">
+                        </div>
+                        <div class="radar-ring ring-2">
+                        </div>
+                        <div class="radar-ring ring-3">
+                        </div>
+                        <svg aria-hidden="true" class="radar-network" preserveaspectratio="none" viewbox="0 0 100 100">
+                            <g class="radar-edges" id="radar-edges">
+                            </g>
+                            <g class="radar-pulses" id="radar-pulses">
+                            </g>
+                        </svg>
+                        <button aria-label="Web service" class="radar-node node-1" data-name="WEB" data-node="web" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                WEB
+                            </b>
+                        </button>
+                        <button aria-label="VPN gateway" class="radar-node node-2" data-name="VPN" data-node="vpn" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                VPN
+                            </b>
+                        </button>
+                        <button aria-label="API service" class="radar-node node-3" data-name="API" data-node="api" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                API
+                            </b>
+                        </button>
+                        <button aria-label="Domain controller" class="radar-node node-4" data-name="DC" data-node="dc" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                DC
+                            </b>
+                        </button>
+                        <button aria-label="Database" class="radar-node node-5" data-name="DB" data-node="db" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                DB
+                            </b>
+                        </button>
+                        <button aria-label="Windows host" class="radar-node node-6" data-name="WINDOWS" data-node="windows" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                WINDOWS
+                            </b>
+                        </button>
+                        <button aria-label="Linux server" class="radar-node node-7" data-name="LINUX" data-node="linux" data-state="pending">
+                            <span>
+                            </span>
+                            <b>
+                                LINUX
+                            </b>
+                        </button>
+                        <div class="radar-compromise" id="radar-compromise">
+                            <strong>
+                                0 / 7
+                            </strong>
+                            ASSETS COMPROMISED
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section id="services" class="py-20 lg:py-32">
-                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-16 reveal">
-                        <h2 class="font-display text-4xl font-bold text-white">Security Services</h2>
-                        <p class="font-mono text-cyber-accent mt-2">// Manual Expertise + Automation</p>
+            <section aria-label="Security testing areas" class="capability-strip">
+                <div class="cap-item">
+                    <span class="cap-index">
+                        01
+                    </span>
+                    <div>
+                        <strong>
+                            APPLICATIONS
+                        </strong>
+                        <small>
+                            Web and APIs
+                        </small>
                     </div>
-
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal flex flex-col h-full relative">
-                            <div class="flex-grow">
-                                <h3 class="font-display text-2xl font-bold text-cyber-accent mb-4 mt-6">Web Application Penetration Testing</h3>
-                                <p class="text-cyber-light/80 mb-6">Comprehensive manual security assessments for web applications and APIs. We go beyond automated scanners to identify business logic flaws, authentication bypasses, and complex vulnerabilities that require expert analysis.</p>
-                                <ul class="font-mono text-sm space-y-3">
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Black-Box, Gray-Box, White-Box testing</li>
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> CWES and OSWE-certified expert analysis</li>
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Detailed reports with remediation guidance</li>
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Post-test support included</li>
-                                </ul>
-                            </div>
-
-                            <div class="mt-8">
-                                <a href="/services/web-application-penetration-testing" class="block w-full text-center py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
-                                    [ Learn More ]
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 reveal flex flex-col h-full relative" style="transition-delay: 200ms;">
-                            <div class="flex-grow">
-                                <h3 class="font-display text-2xl font-bold text-cyber-accent mb-4 mt-6">Continuous Security Monitoring</h3>
-                                <p class="text-cyber-light/80 mb-6">Ongoing vulnerability management through quarterly security assessments. Automated scanning combined with expert validation provides continuous visibility into your security posture with detailed reports every 3 months.</p>
-                                <ul class="font-mono text-sm space-y-3">
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Quarterly comprehensive assessments</li>
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Automated + manual validation</li>
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Reduced false positives</li>
-                                    <li class="flex items-center"><span class="text-cyber-accent mr-3">&gt;</span> Remediation tracking and support</li>
-                                </ul>
-                            </div>
-
-                            <div class="mt-8">
-                                <a href="/services/continuous-security-monitoring/" class="block w-full text-center py-2 border border-cyber-accent text-cyber-accent font-mono text-sm hover:bg-cyber-accent hover:text-cyber-dark transition-all duration-300">
-                                    [ Learn More ]
-                                </a>
-                            </div>
-                        </div>
+                    <span class="cap-progress">
+                        <i>
+                        </i>
+                    </span>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-index">
+                        02
+                    </span>
+                    <div>
+                        <strong>
+                            NETWORKS
+                        </strong>
+                        <small>
+                            Internal and external
+                        </small>
                     </div>
-
-                    <div class="mt-12 text-center reveal">
-                        <div class="bg-cyber-secondary/80 border border-cyber-accent/30 p-8 max-w-3xl mx-auto">
-                            <h3 class="font-display text-2xl font-bold text-white mb-4">Combined Approach: Best of Both Worlds</h3>
-                            <p class="text-cyber-light/80 mb-4">Most clients benefit from combining both services. Start with a comprehensive manual penetration test to identify critical vulnerabilities, then maintain quarterly monitoring to catch new issues as your application evolves.</p>
-                            <p class="text-cyber-light/80">This approach ensures deep security expertise where it matters most, while automation keeps your security posture visible between manual assessments.</p>
-                        </div>
+                    <span class="cap-progress">
+                        <i>
+                        </i>
+                    </span>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-index">
+                        03
+                    </span>
+                    <div>
+                        <strong>
+                            SYSTEMS
+                        </strong>
+                        <small>
+                            Windows and Linux
+                        </small>
                     </div>
+                    <span class="cap-progress">
+                        <i>
+                        </i>
+                    </span>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-index">
+                        04
+                    </span>
+                    <div>
+                        <strong>
+                            INFRASTRUCTURE
+                        </strong>
+                        <small>
+                            Cloud and on-prem infrastructure
+                        </small>
+                    </div>
+                    <span class="cap-progress">
+                        <i>
+                        </i>
+                    </span>
+                </div>
+                <div class="cap-item">
+                    <span class="cap-index">
+                        05
+                    </span>
+                    <div>
+                        <strong>
+                            EXTERNAL SURFACE
+                        </strong>
+                        <small>
+                            Internet-facing assets
+                        </small>
+                    </div>
+                    <span class="cap-progress">
+                        <i>
+                        </i>
+                    </span>
                 </div>
             </section>
-
-            <section id="contact" class="py-20 lg:py-32 bg-cyber-secondary/80">
-                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center mb-12 reveal">
-                        <h2 class="font-display text-4xl font-bold text-white">Contact Us</h2>
-                        <p class="font-mono text-cyber-accent mt-2">// Let's Discuss Your Security Needs</p>
+            <section class="section-shell capabilities-section" id="services">
+                <div class="section-heading reveal">
+                    <div class="section-heading-title">
+                        <div class="eyebrow">
+                            01 / SERVICES
+                        </div>
+                        <h2>
+                            One objective:
+                            <br/>
+                            find the way in.
+                        </h2>
                     </div>
-
-                    <div class="text-center mb-10 font-mono reveal">
-                        <p class="text-cyber-light mt-2">
-                            Call us at <a href="tel:+38974221337" class="text-cyber-accent hover:underline">+389 74 221 337</a>
+                    <div class="section-heading-copy">
+                        <p class="section-intro">
+                            Security boundaries rarely line up with organizational ones. We test across them, and keep going when one weakness points to another.
                         </p>
-
-                        <div class="my-4">or send us a message.</div>
+                        <div aria-hidden="true" class="heading-datum">
+                            <span aria-hidden="true" class="datum-marker">
+                                <i>
+                                </i>
+                            </span>
+                            <span class="datum-line">
+                            </span>
+                            <span class="datum-label">
+                                ATTACK SURFACE / CONNECTED
+                            </span>
+                        </div>
                     </div>
-
-                    <div class="max-w-2xl mx-auto reveal">
-                        <form action="https://submit-form.com/oD9XmDJUX" method="POST" class="space-y-6">
-                            <input type="hidden" name="_redirect" value="https://lekovsecurity.mk/thanks.html">
-
-                            <div class="flex flex-col md:flex-row gap-6">
-                                <div class="flex-1">
-                                    <label for="name" class="font-mono text-sm text-cyber-accent block mb-2">// Your Name</label>
-                                    <input type="text" id="name" name="name" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
-                                </div>
-
-                                <div class="flex-1">
-                                    <label for="email" class="font-mono text-sm text-cyber-accent block mb-2">// Your Email</label>
-                                    <input type="email" id="email" name="email" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
-                                </div>
-
-                            </div>
-
-                            <div>
-                                <label for="subject" class="font-mono text-sm text-cyber-accent block mb-2">// Subject</label>
-                                <input type="text" id="subject" name="_email.subject" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all">
-                            </div>
-
-                            <div>
-                                <label for="message" class="font-mono text-sm text-cyber-accent block mb-2">// Tell us about your application</label>
-                                <textarea id="message" name="message" rows="5" required class="w-full bg-cyber-secondary border border-cyber-accent/30 p-3 text-cyber-light focus:outline-none focus:border-cyber-accent focus:ring-1 focus:ring-cyber-accent transition-all resize-none" placeholder="What application do you need tested? What are your security concerns?"></textarea>
-                            </div>
-
-                            <div>
-                                <button type="submit" class="w-full px-8 py-3 bg-cyber-accent text-cyber-dark font-mono font-bold hover:bg-transparent hover:text-cyber-accent border-2 border-cyber-accent transition-all duration-300 cursor-pointer">
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
+                </div>
+                <div class="capabilities-grid">
+                    <article class="capability-card reveal" data-code="AUTHENTICATION / 443" style="--delay:.02s">
+                        <div aria-hidden="true" class="card-icon icon-app">
+                            <svg viewbox="0 0 24 24">
+                                <rect height="15" rx="1.5" width="17" x="3.5" y="4.5">
+                                </rect>
+                                <path d="M7 8h10M7 12h6M7 16h3">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-index">
+                            01
+                        </div>
+                        <h3>
+                            Web and API
+                            <br/>
+                            Penetration Testing
+                        </h3>
+                        <p>
+                            Business logic, authentication, authorization, session handling, API abuse, input handling, and the edge cases scanners miss.
+                        </p>
+                        <span class="card-tags">
+                            APPLICATIONS / LOGIC / AUTH
+                        </span>
+                    </article>
+                    <article class="capability-card reveal" data-code="SOURCE / REVIEW" style="--delay:.05s">
+                        <div aria-hidden="true" class="card-icon icon-code">
+                            <svg viewbox="0 0 24 24">
+                                <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"></path>
+                            </svg>
+                        </div>
+                        <div class="card-index">
+                            02
+                        </div>
+                        <h3>
+                            Source Code and Application
+                            <br/>
+                            Security Review
+                        </h3>
+                        <p>
+                            Source-assisted review of complex application logic, authentication flows, authorization boundaries, deserialization, injection paths, and exploitable implementation flaws.
+                        </p>
+                        <span class="card-tags">
+                            SOURCE CODE / LOGIC / EXPLOITATION
+                        </span>
+                    </article>
+                    <article class="capability-card reveal" data-code="SEGMENTATION / TCP" style="--delay:.08s">
+                        <div aria-hidden="true" class="card-icon icon-network">
+                            <svg viewbox="0 0 24 24">
+                                <circle cx="5" cy="12" r="2">
+                                </circle>
+                                <circle cx="19" cy="6" r="2">
+                                </circle>
+                                <circle cx="19" cy="18" r="2">
+                                </circle>
+                                <path d="M7 11l10-4M7 13l10 4">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-index">
+                            03
+                        </div>
+                        <h3>
+                            Network and Infrastructure
+                            <br/>
+                            Security Testing
+                        </h3>
+                        <p>
+                            Exposed services, weak configurations, segmentation, credential paths, and the opportunities that let an attacker move deeper.
+                        </p>
+                        <span class="card-tags">
+                            NETWORK / SERVICES / SEGMENTATION
+                        </span>
+                    </article>
+                    <article class="capability-card reveal" data-code="IDENTITY / ACTIVE DIRECTORY" style="--delay:.11s">
+                        <div aria-hidden="true" class="card-icon icon-identity">
+                            <svg viewbox="0 0 24 24">
+                                <circle cx="12" cy="7" r="3"></circle>
+                                <path d="M6 20v-2a6 6 0 0 1 12 0v2M4 12h3M17 12h3"></path>
+                            </svg>
+                        </div>
+                        <div class="card-index">
+                            04
+                        </div>
+                        <h3>
+                            Active Directory and Identity
+                            <br/>
+                            Attack Testing
+                        </h3>
+                        <p>
+                            Credential abuse, trust relationships, delegation, privilege paths, lateral movement, persistence opportunities, and identity controls tested as part of a realistic internal attack.
+                        </p>
+                        <span class="card-tags">
+                            ACTIVE DIRECTORY / IDENTITY / LATERAL MOVEMENT
+                        </span>
+                    </article>
+                    <article class="capability-card reveal" data-code="PRIVILEGE / LOCAL" style="--delay:.14s">
+                        <div aria-hidden="true" class="card-icon icon-system">
+                            <svg viewbox="0 0 24 24">
+                                <rect height="13" rx="1.5" width="16" x="4" y="4">
+                                </rect>
+                                <path d="M9 20h6M12 17v3M8 8h8M8 12h5">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-index">
+                            05
+                        </div>
+                        <h3>
+                            System Security
+                            <br/>
+                            Assessment
+                        </h3>
+                        <p>
+                            Windows and Linux systems tested for exploitable weaknesses, unsafe defaults, privilege escalation, and local attack opportunities.
+                        </p>
+                        <span class="card-tags">
+                            WINDOWS / LINUX / PRIVILEGE
+                        </span>
+                    </article>
+                    <article class="capability-card reveal" data-code="EXTERNAL / ENUMERATION" style="--delay:.20s">
+                        <div aria-hidden="true" class="card-icon icon-external">
+                            <svg viewbox="0 0 24 24">
+                                <circle cx="12" cy="12" r="8">
+                                </circle>
+                                <path d="M12 4v16M4 12h16M7 7c2.7 2.3 7.3 2.3 10 0M7 17c2.7-2.3 7.3-2.3 10 0">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-index">
+                            06
+                        </div>
+                        <h3>
+                            External Attack Surface
+                            <br/>
+                            Assessment
+                        </h3>
+                        <p>
+                            Discover what your organization exposes to the internet, validate what is reachable, and prioritize the paths worth pursuing.
+                        </p>
+                        <span class="card-tags">
+                            DISCOVERY / EXPOSURE / VALIDATION
+                        </span>
+                    </article>
+                </div>
+            </section>
+            <section class="approach-section" id="approach">
+                <div class="section-shell approach-wrap">
+                    <div class="approach-lead reveal">
+                        <div class="eyebrow">
+                            02 / APPROACH
+                        </div>
+                        <h2>
+                            Not a scan.
+                            <br/>
+                            An attack.
+                        </h2>
+                        <p>
+                            Automation helps us move faster. Manual testing tells us what actually matters. We look for the path that turns a small weakness into meaningful access.
+                        </p>
                     </div>
+                    <div class="approach-list reveal">
+                        <div class="approach-item">
+                            <span>
+                                01
+                            </span>
+                            <div>
+                                <div class="approach-title">
+                                    <svg aria-hidden="true" class="approach-icon" viewbox="0 0 24 24">
+                                        <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2zM9 4v14M15 6v14"></path>
+                                    </svg>
+                                    <h3>
+                                        Map
+                                    </h3>
+                                </div>
+                                <p>
+                                    Understand assets, trust boundaries, entry points, identities, and the attack surface before touching the obvious findings.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="approach-item">
+                            <span>
+                                02
+                            </span>
+                            <div>
+                                <div class="approach-title">
+                                    <svg aria-hidden="true" class="approach-icon" viewbox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="7"></circle>
+                                        <path d="M12 2v5M12 17v5M2 12h5M17 12h5M9 12l2 2 4-5"></path>
+                                    </svg>
+                                    <h3>
+                                        Attack
+                                    </h3>
+                                </div>
+                                <p>
+                                    Chain weaknesses, test assumptions, and pursue realistic paths to compromise rather than isolated checklist items.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="approach-item">
+                            <span>
+                                03
+                            </span>
+                            <div>
+                                <div class="approach-title">
+                                    <svg aria-hidden="true" class="approach-icon" viewbox="0 0 24 24">
+                                        <path d="M12 3l7 3v5c0 4.6-2.8 8-7 10-4.2-2-7-5.4-7-10V6z"></path>
+                                        <path d="M8.5 12l2.2 2.2 4.8-5"></path>
+                                    </svg>
+                                    <h3>
+                                        Validate
+                                    </h3>
+                                </div>
+                                <p>
+                                    Prove impact with reproducible exploitation and remove findings that cannot be meaningfully demonstrated.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="approach-item">
+                            <span>
+                                04
+                            </span>
+                            <div>
+                                <div class="approach-title">
+                                    <svg aria-hidden="true" class="approach-icon" viewbox="0 0 24 24">
+                                        <path d="M14 5a5 5 0 0 0-6 6L3 16l5 5 5-5a5 5 0 0 0 6-6l-4 4-3-3z"></path>
+                                    </svg>
+                                    <h3>
+                                        Fix
+                                    </h3>
+                                </div>
+                                <p>
+                                    Explain what happened, why it happened, and what to change, with enough technical detail to act on it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="statement-section section-shell reveal">
+                <div class="statement-main">
+                    <div class="statement-mark">
+                        [ / ]
+                    </div>
+                    <h2>
+                        Good security work
+                        <br/>
+                        changes what you see.
+                    </h2>
+                    <p>
+                        Not every finding matters. Not every attack path is obvious. The point of offensive testing is to expose the meaningful routes to compromise, before someone else does.
+                    </p>
+                </div>
+                <div class="statement-brand">
+                    <img alt="Lekov Security" src="https://lekovsecurity.mk/assets/images/logo.svg"/>
+                </div>
+            </section>
+            <section class="contact-section" id="contact">
+                <div class="section-shell contact-wrap">
+                    <div class="contact-copy reveal">
+                        <div class="eyebrow">
+                            03 / CONTACT
+                        </div>
+                        <h2>
+                            Let's see
+                            <br/>
+                            what breaks.
+                        </h2>
+                        <p>
+                            Tell us what you need tested, what matters most, and what you already know. We&rsquo;ll shape the engagement around the real attack surface, the systems that matter, the access you can provide, and the time available.
+                        </p>
+                        <p class="contact-direct">
+                            Prefer to discuss the scope directly?
+                            <a class="contact-booking" href="https://bookings.cloud.microsoft/book/LekovSecurity1@lekov.mk/?ismsaljsauthenabled" target="_blank" rel="noopener noreferrer">Schedule a call</a>,
+                            or call us at
+                            <a class="contact-phone" href="tel:+38974221337">+389 74 221 337</a>.
+                        </p>
+                    </div>
+                    <form action="https://submit-form.com/oD9XmDJUX" class="contact-form reveal" id="contact-form" method="post">
+                        <input name="_redirect" type="hidden" value="https://lekovsecurity.mk/thanks/"/>
+                        <label>
+                            Name
+                            <input autocomplete="name" name="name" required="" type="text"/>
+                        </label>
+                        <label>
+                            Email
+                            <input autocomplete="email" name="email" required="" type="email"/>
+                        </label>
+                        <label>
+                            Subject
+                            <input name="_email.subject" placeholder="Application, network, infrastructure..." required="" type="text"/>
+                        </label>
+                        <label>
+                            Message
+                            <textarea name="message" placeholder="Tell us about the environment, timing, or objectives." required="" rows="5"></textarea>
+                        </label>
+                        <button class="button button-dark" type="submit">
+                            Start the conversation
+                            <span>
+                                &rarr;
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </section>
         </main>
-
-        <footer class="border-t border-cyber-accent/20">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <div class="flex justify-center space-x-6 mb-6">
-                    <a href="https://linkedin.com/company/leksec" target="_blank" rel="noopener noreferrer" class="text-cyber-light/50 hover:text-cyber-accent transition-colors" aria-label="LinkedIn">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                        </svg>
-                    </a>
-
-                    <a href="https://github.com/leksec" target="_blank" rel="noopener noreferrer" class="text-cyber-light/50 hover:text-cyber-accent transition-colors" aria-label="GitHub">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="text-center text-cyber-light/50">
-                    <p class="font-mono text-sm">&copy; 2025–2026 Lekov Security. All Rights Reserved.</p>
-                    <p class="font-mono text-xs mt-2">Expert Cybersecurity Services.</p>
-                    <p class="font-mono text-sm mt-2">Kratovo, North Macedonia</p>
-                </div>
+        <footer class="site-footer section-shell">
+            <div class="footer-brand">
+                LEKOV SECURITY
+            </div>
+            <span aria-label="North Macedonia" class="footer-flag" role="img">
+                🇲🇰
+            </span>
+            <div class="footer-year">
+                &copy; 2025-2026
             </div>
         </footer>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-                const mobileMenu = document.getElementById('mobile-menu');
-                const menuOpenIcon = document.getElementById('menu-open-icon');
-                const menuCloseIcon = document.getElementById('menu-close-icon');
-
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                    menuOpenIcon.classList.toggle('hidden');
-                    menuCloseIcon.classList.toggle('hidden');
-                });
-
-                mobileMenu.addEventListener('click', (e) => {
-                    if (e.target.tagName === 'A') {
-                        mobileMenu.classList.add('hidden');
-                        menuOpenIcon.classList.remove('hidden');
-                        menuCloseIcon.classList.add('hidden');
-                    }
-                });
-
-                const typingTextElement = document.getElementById('typing-text');
-                const words = ["Innovate.", "Automate.", "Protect."];
-                let wordIndex = 0;
-                let charIndex = 0;
-                let isDeleting = false;
-
-                function type() {
-                    const currentWord = words[wordIndex];
-                    if (isDeleting) {
-                        typingTextElement.textContent = currentWord.substring(0, charIndex - 1);
-                        charIndex--;
-                    } else {
-                        typingTextElement.textContent = currentWord.substring(0, charIndex + 1);
-                        charIndex++;
-                    }
-
-                    let typeSpeed = isDeleting ? 100 : 200;
-
-                    if (!isDeleting && charIndex === currentWord.length) {
-                        typeSpeed = 2000;
-                        isDeleting = true;
-                    } else if (isDeleting && charIndex === 0) {
-                        isDeleting = false;
-                        wordIndex = (wordIndex + 1) % words.length;
-                        typeSpeed = 500;
-                    }
-
-                    setTimeout(type, typeSpeed);
-                }
-
-                if (typingTextElement) {
-                     setTimeout(() => {
-                        typingTextElement.classList.remove('hidden');
-                        type();
-                    }, 500);
-                }
-
-                const revealElements = document.querySelectorAll('.reveal');
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting)
-                            entry.target.classList.add('visible');
-                    });
-                }, {
-                    threshold: 0.1
-                });
-
-                revealElements.forEach(el => observer.observe(el));
-            });
+        <script src="script.js">
         </script>
     </body>
 </html>

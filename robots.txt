@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 
-Disallow: /thanks.html
+Disallow: /404.html
+Disallow: /thanks/index.html
 
 Sitemap: https://lekovsecurity.mk/sitemap.xml
