@@ -32,7 +32,7 @@
 .thanks-noise {
     z-index: 4;
     opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitchTiles'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E");
+    background-image: url('../images/noise.svg');
 }
 
 .thanks-grid {
@@ -73,7 +73,9 @@
     gap: 10px;
     color: var(--thanks-text);
     text-decoration: none;
-    font: 600 11px/1 "DM Mono", monospace;
+    font:
+        600 11px/1 'DM Mono',
+        monospace;
     letter-spacing: 0.12em;
 }
 
@@ -123,7 +125,9 @@
     color: #8c958d;
     text-decoration: none;
     text-transform: uppercase;
-    font: 500 10px/1 "DM Mono", monospace;
+    font:
+        500 10px/1 'DM Mono',
+        monospace;
     letter-spacing: 0.13em;
     transition: color 180ms ease;
 }
@@ -151,7 +155,7 @@
 }
 
 .thanks-card::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -167,7 +171,9 @@
     gap: 10px;
     margin-bottom: 36px;
     color: var(--thanks-accent);
-    font: 500 11px/1 "DM Mono", monospace;
+    font:
+        500 11px/1 'DM Mono',
+        monospace;
     letter-spacing: 0.12em;
 }
 
@@ -176,7 +182,9 @@
     height: 7px;
     border-radius: 50%;
     background: var(--thanks-accent);
-    box-shadow: 0 0 0 5px rgba(184, 255, 53, 0.07), 0 0 18px rgba(184, 255, 53, 0.45);
+    box-shadow:
+        0 0 0 5px rgba(184, 255, 53, 0.07),
+        0 0 18px rgba(184, 255, 53, 0.45);
 }
 
 .thanks-code {
@@ -184,7 +192,9 @@
     top: 26px;
     right: 34px;
     color: rgba(184, 255, 53, 0.06);
-    font: 700 clamp(5rem, 14vw, 10rem)/0.8 "DM Mono", monospace;
+    font:
+        700 clamp(5rem, 14vw, 10rem) / 0.8 'DM Mono',
+        monospace;
     letter-spacing: -0.08em;
     user-select: none;
 }
@@ -227,9 +237,15 @@
     padding: 0 20px;
     text-decoration: none;
     text-transform: uppercase;
-    font: 600 10px/1 "DM Mono", monospace;
+    font:
+        600 10px/1 'DM Mono',
+        monospace;
     letter-spacing: 0.11em;
-    transition: transform 180ms ease, background 180ms ease, color 180ms ease, border-color 180ms ease;
+    transition:
+        transform 180ms ease,
+        background 180ms ease,
+        color 180ms ease,
+        border-color 180ms ease;
 }
 
 .thanks-primary {
@@ -264,7 +280,9 @@
     align-items: center;
     border-top: 1px solid var(--thanks-line);
     color: #5f685f;
-    font: 10px/1 "DM Mono", monospace;
+    font:
+        10px/1 'DM Mono',
+        monospace;
     letter-spacing: 0.08em;
 }
 
